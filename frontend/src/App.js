@@ -7,6 +7,12 @@ import Auth from './components/Auth'
 import Profile from './components/Profile'
 import actions from './api'
 import { Switch, Route, Link } from 'react-router-dom'
+import Variablesp1 from './Variables/Variablesp1'
+import Stringsp1 from './Strings/Stringsp1'
+import Arraysp1 from './Arrays/Arrayp1'
+import Objectsp1 from './Objects/Objectsp1'
+import Functionsp1 from './Functions/Functionsp1'
+import Parametersp1 from './Parameters/Parametersp1'
 
 
 
@@ -22,9 +28,6 @@ function App() {
 
   return (
     <div className="App">
-
-      <h1>JSBuddy</h1>
-      <h2>JavaScript Learning Tool for Kids</h2>
 
   
       <h4>{user.email}</h4>
@@ -44,8 +47,20 @@ function App() {
         <Route exact path="/add-posts" render={(props) => <AddPost {...props} />} /> */}
         <Route exact path="/auth" render={(props) => <Auth setUser={setUser} {...props} />} />
         <Route exact path="/profile" render={(props) => <Profile user={user} {...props} />} />
+
+
+
+        {/* Topic Routes */}
+        <Route exact path="/variables" render={(props) => <Variablesp1 {...props} />} />
+        <Route exact path="/strings" render={(props) => <Stringsp1 {...props} />} />
+        <Route exact path="/arrays" render={(props) => <Arraysp1 {...props} />} />
+        <Route exact path="/objects" render={(props) => <Objectsp1 {...props} />} />
+        <Route exact path="/functions" render={(props) => <Functionsp1 {...props} />} />
+        <Route exact path="/parameters" render={(props) => <Parametersp1 {...props} />} />
+
+      
       </Switch>
-      <img src={'./images/landingpage.png'} alt="kids"/>
+     
     </div>
   );
 }

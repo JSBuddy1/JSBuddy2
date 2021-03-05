@@ -3,7 +3,14 @@ import React from 'react';
 function Home(props) {
     return (
         <>
-            <h3>Home</h3>
+           <h1>JSBuddy</h1>
+
+
+           
+      <h2>JavaScript Learning Tool for Kids</h2>
+
+
+      <img src={'./images/landingpage.png'} alt="kids"/>
         </>
     );
 }
