@@ -1,3 +1,4 @@
+import { Controlled as CodeMirror } from 'react-codemirror2'
 import { useEffect, useState } from 'react'
 import './App.css';
 import Home from './components/Home'
@@ -32,7 +33,7 @@ function App() {
   return (
     <div className="App">
 
-  
+
       <h4>{user.email}</h4>
       <nav>
         <Link to="/">Home</Link>
@@ -40,9 +41,25 @@ function App() {
         <Link to="add-posts">Add Post</Link> */}
         {!user.email ? <Link to="/auth">Log in</Link> : <Link to="/profile">Profile</Link>}
 
-       
+
       </nav>
 
+      <CodeMirror
+        //value={this.state.value}
+        // options={options}
+        value='<h1>I ♥ react-codemirror2</h1>'
+        options={{
+          mode: 'xml',
+          theme: 'material',
+          lineNumbers: true
+        }}
+        onBeforeChange={(editor, data, value) => {
+          //this.setState({ value });
+        }}
+        onChange={(editor, data, value) => {
+          console.log(editor, data, value)
+        }}
+      />
 
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />
@@ -73,9 +90,9 @@ function App() {
                       {/* Parameters */}
         <Route exact path="/parameters" render={(props) => <Parametersp1 {...props} />} />
 
-      
+
       </Switch>
-     
+
     </div>
   );
 }
