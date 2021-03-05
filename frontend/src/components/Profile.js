@@ -20,12 +20,14 @@ function Profile(props) {
             )
         })
     }
-
+    console.log(myPosts)
     return (
         <div>
-            <h3>{props.user?.email}</h3>
+            <h1>Welcome {props.user?.given_name}!</h1>
+     
+          
 
-            {showPosts()}
+            {showPosts()} 
         </div>
     );
 }

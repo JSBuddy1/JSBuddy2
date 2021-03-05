@@ -25,8 +25,8 @@ function App() {
 
       <h1>JSBuddy</h1>
       <h2>JavaScript Learning Tool for Kids</h2>
-      <h3>Come on ISH!</h3>
-      <img src={`frontend/src/images/landingpage.png`} alt="kids"/>
+
+  
       <h4>{user.email}</h4>
       <nav>
         <Link to="/">Home</Link>
@@ -34,7 +34,7 @@ function App() {
         <Link to="add-posts">Add Post</Link> */}
         {!user.email ? <Link to="/auth">Log in</Link> : <Link to="/profile">Profile</Link>}
 
-
+       
       </nav>
 
 
@@ -45,7 +45,7 @@ function App() {
         <Route exact path="/auth" render={(props) => <Auth setUser={setUser} {...props} />} />
         <Route exact path="/profile" render={(props) => <Profile user={user} {...props} />} />
       </Switch>
-
+      <img src={'./images/landingpage.png'} alt="kids"/>
     </div>
   );
 }
