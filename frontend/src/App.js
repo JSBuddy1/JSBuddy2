@@ -8,6 +8,7 @@ import Profile from './components/Profile'
 import actions from './api'
 import { Switch, Route, Link } from 'react-router-dom'
 import Variablesp1 from './Variables/Variablesp1'
+import Variablesp2 from './Variables/Variablesp2'
 import Stringsp1 from './Strings/Stringsp1'
 import Arraysp1 from './Arrays/Arrayp1'
 import Objectsp1 from './Objects/Objectsp1'
@@ -51,11 +52,22 @@ function App() {
 
 
         {/* Topic Routes */}
+                    {/* Variables */}
         <Route exact path="/variables" render={(props) => <Variablesp1 {...props} />} />
+        <Route exact path="/variablesp2" render={(props) => <Variablesp2 {...props} />} />
+
+
+
+
+                     {/* Strings */}
         <Route exact path="/strings" render={(props) => <Stringsp1 {...props} />} />
+                      {/* Arrays */}
         <Route exact path="/arrays" render={(props) => <Arraysp1 {...props} />} />
+                      {/* Objects */}
         <Route exact path="/objects" render={(props) => <Objectsp1 {...props} />} />
+                      {/* Functions */}
         <Route exact path="/functions" render={(props) => <Functionsp1 {...props} />} />
+                      {/* Parameters */}
         <Route exact path="/parameters" render={(props) => <Parametersp1 {...props} />} />
 
       
