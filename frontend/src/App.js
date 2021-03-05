@@ -1,4 +1,10 @@
-import { Controlled as CodeMirror } from 'react-codemirror2'
+import { describe, it, expect, run } from 'jest-lite';
+import 'codemirror/lib/codemirror.css'
+import 'codemirror/theme/material.css'
+import 'codemirror/theme/neat.css'
+import 'codemirror/mode/xml/xml.js'
+import 'codemirror/mode/javascript/javascript.js'
+import { UnControlled as CodeMirror } from 'react-codemirror2'
 import { useEffect, useState } from 'react'
 import './App.css';
 import Home from './components/Home'
@@ -21,12 +27,19 @@ import Parametersp1 from './Parameters/Parametersp1'
 function App() {
 
   const [user, setUser] = useState({})
+  let [value, setValue] = useState('')
+  let [guess, setGuess] = useState('')
 
   useEffect(() => {
     actions.getUser().then(res => {
       setUser(res.data)
     }).catch(console.error)
   }, [])
+
+
+  const checkAnswer = () => {
+    doesItPass(guess)
+  }
 
   return (
     <div className="App">
@@ -43,21 +56,25 @@ function App() {
       </nav>
 
       <CodeMirror
-        //value={this.state.value}
+        // value={value}
         // options={options}
-        value='<h1>I ♥ react-codemirror2</h1>'
+        //  value='<h1>I ♥ react-codemirror2</h1>'
         options={{
-          mode: 'xml',
+          mode: 'javascript',
           theme: 'material',
           lineNumbers: true
         }}
-        onBeforeChange={(editor, data, value) => {
-          //this.setState({ value });
+        onBeforeChange={(editor, data, value, next) => {
+
+          next()
         }}
         onChange={(editor, data, value) => {
           console.log(editor, data, value)
+          setGuess(value)
         }}
       />
+
+      <button onClick={checkAnswer}>Submit Guess</button>
 
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />
@@ -69,22 +86,22 @@ function App() {
 
 
         {/* Topic Routes */}
-                    {/* Variables */}
+        {/* Variables */}
         <Route exact path="/variables" render={(props) => <Variablesp1 {...props} />} />
         <Route exact path="/variablesp2" render={(props) => <Variablesp2 {...props} />} />
 
 
 
 
-                     {/* Strings */}
+        {/* Strings */}
         <Route exact path="/strings" render={(props) => <Stringsp1 {...props} />} />
-                      {/* Arrays */}
+        {/* Arrays */}
         <Route exact path="/arrays" render={(props) => <Arraysp1 {...props} />} />
-                      {/* Objects */}
+        {/* Objects */}
         <Route exact path="/objects" render={(props) => <Objectsp1 {...props} />} />
-                      {/* Functions */}
+        {/* Functions */}
         <Route exact path="/functions" render={(props) => <Functionsp1 {...props} />} />
-                      {/* Parameters */}
+        {/* Parameters */}
         <Route exact path="/parameters" render={(props) => <Parametersp1 {...props} />} />
 
 
@@ -93,5 +110,19 @@ function App() {
     </div>
   );
 }
-
+// function sum(x, y) {
+//   return x + y;
+// }
+async function doesItPass(str) {
+  console.log(str, typeof str)
+  const sum = new Function('return ' + str)() //This is the part that needs to be better understood. 
+  console.log(sum, typeof sum)
+  describe('sum', () => {
+    it('adds the two given numbers', () => {
+      expect(sum(2, 2)).toBe(4);
+    });
+  });
+  const result = await run();
+  console.log(result);
+}
 export default App;
