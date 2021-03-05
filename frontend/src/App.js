@@ -9,11 +9,13 @@ import actions from './api'
 import { Switch, Route, Link } from 'react-router-dom'
 import Variablesp1 from './Variables/Variablesp1'
 import Variablesp2 from './Variables/Variablesp2'
+import Variablesp3 from './Variables/Variablesp3'
 import Stringsp1 from './Strings/Stringsp1'
 import Arraysp1 from './Arrays/Arrayp1'
 import Objectsp1 from './Objects/Objectsp1'
 import Functionsp1 from './Functions/Functionsp1'
 import Parametersp1 from './Parameters/Parametersp1'
+
 
 
 
@@ -55,6 +57,7 @@ function App() {
                     {/* Variables */}
         <Route exact path="/variables" render={(props) => <Variablesp1 {...props} />} />
         <Route exact path="/variablesp2" render={(props) => <Variablesp2 {...props} />} />
+        <Route exact path="/variablesp3" render={(props) => <Variablesp3 {...props} />} />
 
 
 
