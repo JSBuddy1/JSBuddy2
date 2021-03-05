@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react'
 import './App.css';
 import Home from './components/Home'
-import AddPost from './components/AddPost'
-import AllPosts from './components/AllPosts'
+// import AddPost from './components/AddPost'
+// import AllPosts from './components/AllPosts'
 import Auth from './components/Auth'
 import Profile from './components/Profile'
 import actions from './api'
 import { Switch, Route, Link } from 'react-router-dom'
-
-
 
 
 
@@ -27,6 +25,7 @@ function App() {
 
       <h1>JSBuddy</h1>
       <h2>JavaScript Learning Tool for Kids</h2>
+      <h3>Come on ISH!</h3>
       <img src={`frontend/src/images/landingpage.png`} alt="kids"/>
       <h4>{user.email}</h4>
       <nav>
