@@ -15,7 +15,7 @@ import Home from './components/Home'
 import Auth from './components/Auth'
 import Profile from './components/Profile'
 import actions from './api'
-import { Switch, Route, Link } from 'react-router-dom'
+import { Switch, Route, Link, useHistory } from 'react-router-dom'
 import Variablesp1 from './Variables/Variablesp1'
 import Variablesp2 from './Variables/Variablesp2'
 import Variablesp3 from './Variables/Variablesp3'
@@ -34,6 +34,8 @@ function App() {
   let [value, setValue] = useState('')
   let [guess, setGuess] = useState('')
 
+  const history = useHistory()
+
   useEffect(() => {
     actions.getUser().then(res => {
       setUser(res.data)
@@ -42,7 +44,7 @@ function App() {
 
 
   const checkAnswer = () => {
-    doesItPass(guess)
+    doesItPass(guess, history)
     formatCode()
   }
   const formatCode = () => {
@@ -128,7 +130,7 @@ function App() {
 // function sum(x, y) {
 //   return x + y;
 // }
-async function doesItPass(str) {
+async function doesItPass(str, history) {
   console.log(str, typeof str)
   const sum = new Function('return ' + str)() //This is the part that needs to be better understood. 
   console.log(sum, typeof sum)
@@ -142,6 +144,7 @@ async function doesItPass(str) {
   let lastResult = result.pop()
   if (lastResult.status == 'pass'){
     alert('pass') 
+    history.push('variablesp2')
   } else {
     alert('try again')
   }
