@@ -144,7 +144,7 @@ async function doesItPass(str, history) {
   let lastResult = result.pop()
   if (lastResult.status == 'pass'){
     alert('pass') 
-    history.push('variablesp2')
+    history.push('variablep2')
   } else {
     alert('try again')
   }
