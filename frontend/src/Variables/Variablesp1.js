@@ -2,29 +2,34 @@ import React from 'react';
 
 function Variablesp1(props) {
 
+    const routeChange = () =>{ 
+        let path = `/variablesp2`; 
+        // history.push(path);
+      }
     return (
         <div>
+        <h2>Introduction to Variables</h2>
+        <p>Let’s start with an example from real life.</p>
+        <p>You decided to pack all your stuff into different boxes and place them into some storage. You put labels on each box so you can easier find it later, and obviously, the name is descriptive, so you know what is in that box.</p>
 
-        <h1>JavaScript Variables : Part 1</h1>
+        <p>Analogy:</p>
 
-        <p>JavaScript variables are containers for storing data values.</p>
+        <p>
+        storage is a memory,<br />
+        the box is a variable,<br />
+        the label is a variable name.
+        </p>
+        <img src={'./images/movingboxes.jpg'} alt='movingboxes' />
 
-        <p>In this example, x, y, and z, are variables, declared with the var keyword:</p>
+        <p style={{textAlign:'justify' }} > The main purpose of variables is to store some information. We can think of them as of some kind of boxes that hold some data. These boxes are labeled so we can get them at any point, or just in certain situations when we need them, access to them.
+Very common way of saying - access to variable - is reference a variable by its name/label.</p>
 
-                <p>  Example: <br />
-                    var x = 5;<br />
-                    var y = 6;<br />
-                    var z = x + y;<br />
-                    From the example above, you can expect:</p>
-                <p>
-                    x stores the value 5<br />
-                    y stores the value 6<br />
-                    z stores the value 11
-                </p>
-                <div>
-                <button style={{display:'flex',}} onclick="myFunction()">Next Slide</button>
-                </div>
+
+        <div>
+        <button style={{display:'flex', alignItems:'flex-end' }} onClick={routeChange}>Next Slide</button>
         </div>
+        </div>
+     
     );
 }
 
