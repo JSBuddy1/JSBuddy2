@@ -7,7 +7,7 @@ function Home(props) {
 
       <h2>JavaScript Learning Tool for Kids</h2>
 
-      <img src={"./images/landingpage.png"} alt="kids" />
+      <img src={"./images/landingpage.png"} style={{width:'100vh'}} alt="kids" />
     </>
   );
 }

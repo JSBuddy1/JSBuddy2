@@ -44,6 +44,12 @@ function Variablesp1(props) {
           onClick={routeChange}>{" "}<Link to="/variablesp2">Next Slide</Link>{" "}
         </button>
       </div>
+
+        
+
+  
+
+
     </div>
   );
 }
