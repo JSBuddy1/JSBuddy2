@@ -8,7 +8,7 @@ import { UnControlled as CodeMirror } from 'react-codemirror2'
 import { useEffect, useState } from 'react'
 import './App.css';
 import prettier from "prettier/standalone";
-import babylon from "prettier/parser-babel";
+// import babylon from "prettier/parser-babel";
 import Home from './components/Home'
 // import AddPost from './components/AddPost'
 // import AllPosts from './components/AllPosts'
@@ -142,8 +142,8 @@ async function doesItPass(str, history) {
   const result = await run();
   console.log(result);
   let lastResult = result.pop()
-  if (lastResult.status == 'pass'){
-    alert('pass') 
+  if (lastResult.status == 'pass') {
+    alert('pass')
     history.push('variablep2')
   } else {
     alert('try again')
