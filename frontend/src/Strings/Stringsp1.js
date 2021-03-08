@@ -1,5 +1,6 @@
 import React from 'react';
-import { link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Playground from '../components/CodeEditor/Playground'
 
 function Stringsp1(props) {
     return (
@@ -11,7 +12,7 @@ function Stringsp1(props) {
             Typically, programmers must enclose strings in quotation marks for the data to recognize as a string.
             In this article, we will discuss the details and usage of “String in JavaScript”
             covering across the following topics:
-                 </p>
+                </p>
 
             <ul>
                 <ol>What are strings in JavaScript?</ol>
@@ -19,6 +20,7 @@ function Stringsp1(props) {
                 <ol>What inbuilt functions are provided by Strings in JavaScript?</ol>
                 <ol>Understanding String’s Html wrapper methods?</ol>
             </ul>
+            <Playground />
         </div>
     );
 }
