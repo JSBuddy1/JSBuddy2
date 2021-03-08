@@ -21,7 +21,15 @@ import Variablesp2 from './Variables/Variablesp2'
 import Variablesp3 from './Variables/Variablesp3'
 import Stringsp1 from './Strings/Stringsp1'
 import Arraysp1 from './Arrays/Arrayp1'
+import Arraysp2 from './Arrays/Arrayp2'
+import Arraysp3 from './Arrays/Arrayp3'
+import Arraysp4 from './Arrays/Arrayp4'
+import Arraysp5 from './Arrays/Arrayp5'
+// import Arraysp6 from './Arrays/Arrayp6'
 import Objectsp1 from './Objects/Objectsp1'
+import Objectsp2 from './Objects/Objectsp2'
+import Objectsp3 from './Objects/Objectsp3'
+import Objectsp4 from './Objects/Objectsp4'
 import Functionsp1 from './Functions/Functionsp1'
 import Parametersp1 from './Parameters/Parametersp1'
 
@@ -43,18 +51,18 @@ function App() {
   }, [])
 
 
-  const checkAnswer = () => {
-    doesItPass(guess, history)
-    formatCode()
-  }
-  const formatCode = () => {
-    const formattedCode = prettier.format(guess, {
-      parser: "babel",
-      plugins: [babylon]
-    });
-    console.log(formattedCode)
-    setGuess(formattedCode);
-  };
+  // const checkAnswer = () => {
+  //   doesItPass(guess, history)
+  //   formatCode()
+  // }
+  // const formatCode = () => {
+  //   const formattedCode = prettier.format(guess, {
+  //     parser: "babel",
+  //     // plugins: [babylon]
+  //   });
+  //   console.log(formattedCode)
+  //   setGuess(formattedCode);
+  // };
 
 
   return (
@@ -71,7 +79,7 @@ function App() {
 
       </nav>
 
-      <CodeMirror
+      {/* <CodeMirror
         value={guess}
         // options={options}
         //  value='<h1>I ♥ react-codemirror2</h1>'
@@ -88,9 +96,9 @@ function App() {
           console.log(editor, data, value)
           setGuess(value)
         }}
-      />
-
-      <button onClick={checkAnswer}>Submit Guess</button>
+      /> */}
+{/* 
+      <button onClick={checkAnswer}>Submit Guess</button> */}
 
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />
@@ -112,10 +120,22 @@ function App() {
 
         {/* Strings */}
         <Route exact path="/strings" render={(props) => <Stringsp1 {...props} />} />
+
         {/* Arrays */}
         <Route exact path="/arrays" render={(props) => <Arraysp1 {...props} />} />
+        <Route exact path="/arraysp2" render={(props) => <Arraysp2 {...props} />} />
+        <Route exact path="/arraysp3" render={(props) => <Arraysp3 {...props} />} />
+        <Route exact path="/arraysp4" render={(props) => <Arraysp4 {...props} />} />
+        <Route exact path="/arraysp5" render={(props) => <Arraysp5 {...props} />} />
+
+
         {/* Objects */}
         <Route exact path="/objects" render={(props) => <Objectsp1 {...props} />} />
+        <Route exact path="/objectsp2" render={(props) => <Objectsp2 {...props} />} />
+        <Route exact path="/objectsp3" render={(props) => <Objectsp3 {...props} />} />
+        <Route exact path="/objectsp4" render={(props) => <Objectsp4 {...props} />} />
+
+        
         {/* Functions */}
         <Route exact path="/functions" render={(props) => <Functionsp1 {...props} />} />
         {/* Parameters */}
