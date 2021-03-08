@@ -30,48 +30,48 @@ import Parametersp1 from './Parameters/Parametersp1'
 
 function App() {
 
-  const [user, setUser] = useState({})
-  let [value, setValue] = useState('')
-  let [guess, setGuess] = useState('')
+  // const [user, setUser] = useState({})
+  // let [value, setValue] = useState('')
+  // let [guess, setGuess] = useState('')
 
-  const history = useHistory()
+  // const history = useHistory()
 
-  useEffect(() => {
-    actions.getUser().then(res => {
-      setUser(res.data)
-    }).catch(console.error)
-  }, [])
+  // useEffect(() => {
+  //   actions.getUser().then(res => {
+  //     setUser(res.data)
+  //   }).catch(console.error)
+  // }, [])
 
 
-  const checkAnswer = () => {
-    doesItPass(guess, history)
-    formatCode()
-  }
-  const formatCode = () => {
-    const formattedCode = prettier.format(guess, {
-      parser: "babel",
-      plugins: [babylon]
-    });
-    console.log(formattedCode)
-    setGuess(formattedCode);
-  };
+  // const checkAnswer = () => {
+  //   doesItPass(guess, history)
+  //   formatCode()
+  // }
+  // const formatCode = () => {
+  //   const formattedCode = prettier.format(guess, {
+  //     parser: "babel",
+  //     plugins: [babylon]
+  //   });
+  //   console.log(formattedCode)
+  //   setGuess(formattedCode);
+  // };
 
 
   return (
     <div className="App">
 
 
-      <h4>{user.email}</h4>
+      {/* <h4>{user.email}</h4> */}
       <nav>
         <Link to="/">Home</Link>
         {/* <Link to="all-posts">All Posts</Link>
         <Link to="add-posts">Add Post</Link> */}
-        {!user.email ? <Link to="/auth">Log in</Link> : <Link to="/profile">Profile</Link>}
+        {/* {!user.email ? <Link to="/auth">Log in</Link> : <Link to="/profile">Profile</Link>} */}
 
 
       </nav>
-
-      <CodeMirror
+        
+      {/* <CodeMirror
         value={guess}
         // options={options}
         //  value='<h1>I ♥ react-codemirror2</h1>'
@@ -88,16 +88,16 @@ function App() {
           console.log(editor, data, value)
           setGuess(value)
         }}
-      />
+      /> */}
 
-      <button onClick={checkAnswer}>Submit Guess</button>
+      {/* <button onClick={checkAnswer}>Submit Guess</button> */}
 
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />
         {/* <Route exact path="/all-posts" render={(props) => <AllPosts {...props} />} />
         <Route exact path="/add-posts" render={(props) => <AddPost {...props} />} /> */}
-        <Route exact path="/auth" render={(props) => <Auth setUser={setUser} {...props} />} />
-        <Route exact path="/profile" render={(props) => <Profile user={user} {...props} />} />
+        {/* <Route exact path="/auth" render={(props) => <Auth setUser={setUser} {...props} />} />
+        <Route exact path="/profile" render={(props) => <Profile user={user} {...props} />} /> */}
 
 
 
@@ -130,23 +130,23 @@ function App() {
 // function sum(x, y) {
 //   return x + y;
 // }
-async function doesItPass(str, history) {
-  console.log(str, typeof str)
-  const sum = new Function('return ' + str)() //This is the part that needs to be better understood. 
-  console.log(sum, typeof sum)
-  describe('sum', () => {
-    it('adds the two given numbers', () => {
-      expect(sum(2, 2)).toBe(4);
-    });
-  });
-  const result = await run();
-  console.log(result);
-  let lastResult = result.pop()
-  if (lastResult.status == 'pass'){
-    alert('pass') 
-    history.push('variablep2')
-  } else {
-    alert('try again')
-  }
-}
+// async function doesItPass(str, history) {
+//   console.log(str, typeof str)
+//   const sum = new Function('return ' + str)() //This is the part that needs to be better understood. 
+//   console.log(sum, typeof sum)
+//   describe('sum', () => {
+//     it('adds the two given numbers', () => {
+//       expect(sum(2, 2)).toBe(4);
+//     });
+//   });
+//   const result = await run();
+//   console.log(result);
+//   let lastResult = result.pop()
+//   if (lastResult.status == 'pass'){
+//     alert('pass') 
+//     history.push('variablep2')
+//   } else {
+//     alert('try again')
+//   }
+// }
 export default App;
