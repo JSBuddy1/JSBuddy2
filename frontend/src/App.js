@@ -51,18 +51,18 @@ function App() {
   }, [])
 
 
-  const checkAnswer = () => {
-    doesItPass(guess, history)
-    formatCode()
-  }
-  const formatCode = () => {
-    const formattedCode = prettier.format(guess, {
-      parser: "babel",
-      // plugins: [babylon]
-    });
-    console.log(formattedCode)
-    setGuess(formattedCode);
-  };
+  // const checkAnswer = () => {
+  //   doesItPass(guess, history)
+  //   formatCode()
+  // }
+  // const formatCode = () => {
+  //   const formattedCode = prettier.format(guess, {
+  //     parser: "babel",
+  //     // plugins: [babylon]
+  //   });
+  //   console.log(formattedCode)
+  //   setGuess(formattedCode);
+  // };
 
 
   return (
@@ -79,7 +79,7 @@ function App() {
 
       </nav>
 
-      <CodeMirror
+      {/* <CodeMirror
         value={guess}
         // options={options}
         //  value='<h1>I ♥ react-codemirror2</h1>'
@@ -96,9 +96,9 @@ function App() {
           console.log(editor, data, value)
           setGuess(value)
         }}
-      />
-
-      <button onClick={checkAnswer}>Submit Guess</button>
+      /> */}
+{/* 
+      <button onClick={checkAnswer}>Submit Guess</button> */}
 
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />
