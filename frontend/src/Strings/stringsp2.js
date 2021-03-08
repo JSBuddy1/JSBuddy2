@@ -12,7 +12,6 @@ function stringsp2(props) {
             <ul>
                 <ol>Using String literal</ol>
                 <ol>Using “new” Keyword</ol>
-
             </ul>
             <p>Let’s discuss both of these ways in the sections below:
                 </p>
@@ -28,23 +27,34 @@ function stringsp2(props) {
 
                        var variableName = "literal"; // Using double quotes
                      </p>
+
+            <p>let string = "I love Disney"</p>
+
+            <p>If you don't do this, or miss one of the quotes,
+                         you'll get an error.</p>
+            <p><b>Try entering the following lines:</b></p>
+
+                      let wrongString1 = This is a trial;
+                      let wrongString2 = 'This is a trial;
+                      let wrongString3 = This is a trial';
+
+            <p>These lines don't work because any text without quotes around it is assumed
+            to be a variable name, property name, a reserved word, or similar.
+            If the browser can't find it, then an error is raised
+            (e.g. "missing; before statement").
+            If the browser can see where a string starts,
+            but can't find the end of the string,
+            as indicated by the 2nd quote,
+            it complains with an error (with "unterminated string literal").
+            If your program is raising such errors, then go back
+            and check all your strings to make sure you have no missing quote marks
+                </p>
+
+            <p>The following will work if you previously defined the variable string
+                     — try it now:</p>
             <div>
 
-                <p>
-                    {" "}
-        Example: <br />
-        var x = 5;
-        <br />
-        var y = 6;
-        <br />
-        var z = x + y;
-        <br />
-        From the example above, you can expect:
-      </p>
-                <p>
-                    x stores the value 5<br />
-        y stores the value 6<br />z stores the value 11
-      </p>
+
                 <button
                     style={{ display: "flex", alignItems: "flex-end" }}
                     onClick={routeChange}>{" "}

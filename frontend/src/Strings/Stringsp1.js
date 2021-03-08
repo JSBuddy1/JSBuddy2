@@ -44,6 +44,7 @@ function Stringsp1(props) {
 
             <p>Lets deep dive further to understand how to declare and use strings in JavaScript.</p>
         </div>
+
     );
 }
 
