@@ -10,8 +10,51 @@ function Stringsp4(props) {
     };
 
     return (
-        <div>
-            <h1>How to initialize String in JavaScript?</h1>
+        <div id="Numbers vs. strings">
+            <h1>Numbers vs. strings</h1>
+            <p>So what happens when we try to add (or concatenate)
+                 a string and a number? Let's try it in our console:</p>
+            <code>
+                <span class="token string">'Front '</span>
+                <span class="token operator">'Front '</span>
+                <span class="token number">'Front '</span>
+                <span class="token punctuation">'Front '</span>
+
+            </code>
+
+            <p>You might expect this to return an error,
+            but it works just fine.
+            Trying to represent a string as a number doesn't really make sense,
+            but representing a number as a string does,
+            so the browser rather cleverly converts
+     the number to a string and concatenates the two strings.</p>
+
+            <p>You can even do this with two numbers — you can force a number
+            to become a string by wrapping it in quote marks.
+            Try the following
+          (we are using the <em>typeof</em> operator to check whether the variable is a number or a string)</p>
+
+            <p>The <em>Number</em> object converts anything passed to it into a number, if it can. Try the following:</p>
+            <ul>
+                <ol>let myString = '123';</ol>
+                <ol>  let myNum = Number(myString);</ol>
+                <ol>typeof myNum;</ol>
+            </ul>
+
+            <p>Conversely, every number has a method called <em>toString()</em>
+            that converts it to the equivalent string. Try this:</p>
+
+            <ul>
+                <ol>let myNum2 = 123;</ol>
+                <ol>let myString2 = myNum2.toString();</ol>
+                <ol>typeof myString;</ol>
+                <ol></ol>
+            </ul>
+
+
+
+
+            {/* <h1>How to initialize String in JavaScript?</h1>
             <p>In JavaScript, we can initialize a String in the following two ways:</p>
 
             <ul>
@@ -75,7 +118,7 @@ function Stringsp4(props) {
                          </code>
                          "is now set to have the same as value"
                          <code>string</code>
-            </pre>
+            </pre> */}
 
             <div>
 

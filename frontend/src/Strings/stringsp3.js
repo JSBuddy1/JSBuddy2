@@ -89,10 +89,20 @@ function Stringsp3(props) {
 
             <code>
                 <p>let multiple = one + one + one + one + two;
-                                   multiple;</p>
+                    multiple;</p>
             </code>
 
             <p> You can also use a mix of varibales and actual strings. Try this:</p>
+
+            <code>
+                <p>let response = one + 'I am fine — ' + two;
+                 response;</p>
+            </code>
+
+            <p>Note: When you enter an actual string in your code,
+            enclosed in single or double quotes,
+            it is called a string literal.
+                       </p>
 
 
 
