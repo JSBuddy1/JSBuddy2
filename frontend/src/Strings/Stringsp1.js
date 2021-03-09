@@ -1,8 +1,14 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import Playground from '../components/CodeEditor/Playground'
+
 
 function Stringsp1(props) {
+
+    const routeChange = () => {
+        let path = `/arraysp2`;
+        //history.push(path);
+      };
+
     return (
         <div>
             <h1>Introduction to Strings</h1>
@@ -44,6 +50,13 @@ function Stringsp1(props) {
             </ul>
 
             <p>Lets deep dive further to understand how to declare and use strings in JavaScript.</p>
+
+
+            <button
+                    style={{ display: "flex", alignItems: "flex-end" }}
+                    onClick={routeChange}>{" "}
+                    <Link to="/stringsp2">Next Slide</Link>{" "}
+                </button>
         </div>
 
     );

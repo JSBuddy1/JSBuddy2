@@ -1,6 +1,13 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-function stringsp3(props) {
+function Stringsp3(props) {
+
+    const routeChange = () => {
+        let path = `/arraysp2`;
+        //history.push(path);
+      };
+
     return (
         <div>
             <h1>Single quotes vs. double quotes</h1>
@@ -60,11 +67,15 @@ function stringsp3(props) {
             <p></p>
 
 
-
+            <button
+                    style={{ display: "flex", alignItems: "flex-end" }}
+                    onClick={routeChange}>{" "}
+                    <Link to="/stringsp4">Next Slide</Link>{" "}
+                </button>
 
 
         </div>
     );
 }
 
-export default stringsp3;
+export default Stringsp3;

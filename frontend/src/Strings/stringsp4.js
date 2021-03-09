@@ -1,9 +1,14 @@
 import React from 'react';
-import { link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
+function Stringsp2(props) {
 
-function stringsp2(props) {
+    const routeChange = () => {
+        let path = `/arraysp2`;
+        //history.push(path);
+      };
+
     return (
         <div>
             <h1>How to initialize String in JavaScript?</h1>
@@ -78,11 +83,11 @@ function stringsp2(props) {
                 <button
                     style={{ display: "flex", alignItems: "flex-end" }}
                     onClick={routeChange}>{" "}
-                    <Link to="/stringsp2">Next Slide</Link>{" "}
+                    <Link to="/stringsp5">Next Slide</Link>{" "}
                 </button>
             </div>
         </div>
     );
 }
 
-export default stringsp2;
+export default Stringsp2;
