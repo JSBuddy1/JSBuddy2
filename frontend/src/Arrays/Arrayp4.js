@@ -24,7 +24,7 @@ function Arrayp4(props) {
                 <p>const  cookiesArray = [“chocolate chip”, “oreos”, “sugar cookies”, “snickerdoodles”]</p>
                 <p>cookiesArray.pop() => chocolate chip, oreos, sugar cookies</p>
 
-
+                <img src={'./images/cookies.jpeg'} style={{width: ""}} alt="cookies"/>
                     <p>Ohhhweeee thank goodness we took those snickerdoodles out of moms wonderful cookie arrangement. We don’t want her feeling like she is about to do the cinnamon challenge do we?</p>
         
 

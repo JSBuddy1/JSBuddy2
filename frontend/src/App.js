@@ -21,9 +21,9 @@ import Variablesp2 from './Variables/Variablesp2'
 import Variablesp3 from './Variables/Variablesp3'
 //import Variablesp4 from './Variables/Variablesp4'
 import Stringsp1 from './Strings/Stringsp1'
-import Stringsp2 from './Strings/Stringsp2'
-import Stringsp3 from './Strings/Stringsp3'
-import Stringsp4 from './Strings/Stringsp4'
+//import Stringsp2 from './Strings/Stringsp2'
+//import Stringsp3 from './Strings/Stringsp3'
+//import Stringsp4 from './Strings/Stringsp4'
 import Arraysp1 from './Arrays/Arrayp1'
 import Arraysp2 from './Arrays/Arrayp2'
 import Arraysp3 from './Arrays/Arrayp3'
@@ -34,7 +34,7 @@ import Objectsp1 from './Objects/Objectsp1'
 import Objectsp2 from './Objects/Objectsp2'
 import Objectsp3 from './Objects/Objectsp3'
 import Objectsp4 from './Objects/Objectsp4'
-import Functionsp1 from './Functions/Functionsp1'
+import Functions from './Functions/Functions'
 import Parametersp1 from './Parameters/Parametersp1'
 
 
@@ -124,9 +124,9 @@ function App() {
 
         {/* Strings */}
         <Route exact path="/strings" render={(props) => <Stringsp1 {...props} />} />
-        <Route exact path="/stringsp2" render={(props) => <Stringsp2 {...props} />} />
+        {/* <Route exact path="/stringsp2" render={(props) => <Stringsp2 {...props} />} />
         <Route exact path="/stringsp3" render={(props) => <Stringsp3 {...props} />} />
-        <Route exact path="/stringsp4" render={(props) => <Stringsp4 {...props} />} />
+        <Route exact path="/stringsp4" render={(props) => <Stringsp4 {...props} />} /> */}
 
         {/* Arrays */}
         <Route exact path="/arrays" render={(props) => <Arraysp1 {...props} />} />
@@ -144,7 +144,7 @@ function App() {
 
 
         {/* Functions */}
-        <Route exact path="/functions" render={(props) => <Functionsp1 {...props} />} />
+        <Route exact path="/functions/:page" render={(props) => <Functions {...props} />} />
         {/* Parameters */}
         <Route exact path="/parameters" render={(props) => <Parametersp1 {...props} />} />
 
