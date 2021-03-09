@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import Playground from '../components/CodeEditor/Playground'
 
 function Stringsp1(props) {
+    const routeChange = () => {
+        let path = `/stringsp1`;
+        //history.push(path);
+    };
     return (
+
         <div>
             <h1>Introduction to Strings</h1>
             <p>A string is a data type used in the programming languages which represents text.
@@ -12,7 +17,7 @@ function Stringsp1(props) {
             <br />
             For example, the word “hamburger” and the phrase “I ate three hamburgers” are both strings.
             <br />
-            Typically, programmers must enclose strings in quotation marks for the data to recognize as a string.
+            Typically, you must enclose strings in quotation marks for the data to recognize as a string.
             <br />
             In this article, we will discuss the details and usage of “String in JavaScript”
             covering across the following topics:
@@ -44,7 +49,16 @@ function Stringsp1(props) {
             </ul>
 
             <p>Lets deep dive further to understand how to declare and use strings in JavaScript.</p>
+            <button
+                style={{ display: "flex", alignItems: "flex-end" }}
+                onClick={routeChange}
+            >
+                {" "}
+                <Link to="/stringsp2">Next Slide</Link>{" "}
+            </button>
         </div>
+
+
 
     );
 }

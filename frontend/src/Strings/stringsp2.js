@@ -4,6 +4,10 @@ import { link } from "react-router-dom";
 
 
 function stringsp2(props) {
+    const routeChange = () => {
+        let path = `/objectsp4`;
+        //history.push(path);
+    };
     return (
         <div>
             <h1>How to initialize String in JavaScript?</h1>
@@ -78,7 +82,7 @@ function stringsp2(props) {
                 <button
                     style={{ display: "flex", alignItems: "flex-end" }}
                     onClick={routeChange}>{" "}
-                    <Link to="/stringsp2">Next Slide</Link>{" "}
+                    <Link to="/stringsp3">Next Slide</Link>{" "}
                 </button>
             </div>
         </div>
