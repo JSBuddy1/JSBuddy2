@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useState} from "react";
 import { slides } from "./functionSlides";
 import Playground from "../components/CodeEditor/Playground";
 import { describe, it, expect, run } from "jest-lite";
@@ -46,8 +46,9 @@ function Functions(props) {
         </>
       ) : null}
       <br></br> <br></br>
-      <button onClick={prevPage}>Prev</button>
-      page {props.match.params.page} {page}
+      <button onClick={prevPage}>Previous</button>
+      <span></span>
+      {props.match.params.page} {page} <span></span>
       <button onClick={switchPage}>Next</button>
     </div>
   );
