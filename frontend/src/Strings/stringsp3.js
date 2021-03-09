@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-function stringsp3(props) {
+function Stringsp3(props) {
     const routeChange = () => {
-        let path = `/objectsp4`;
+        let path = `/stringsp4`;
         //history.push(path);
     };
     return (
@@ -109,4 +109,4 @@ function stringsp3(props) {
     );
 }
 
-export default stringsp3;
+export default Stringsp3;

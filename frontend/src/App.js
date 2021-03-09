@@ -19,10 +19,10 @@ import { Switch, Route, Link, useHistory } from 'react-router-dom'
 import Variablesp1 from './Variables/Variablesp1'
 import Variablesp2 from './Variables/Variablesp2'
 import Variablesp3 from './Variables/Variablesp3'
-import Variablesp4 from './Variables/Variablesp4'
+//import Variablesp4 from './Variables/Variablesp4'
 import Stringsp1 from './Strings/Stringsp1'
 import Stringsp2 from './Strings/Stringsp2'
-import stringsp3 from './Strings/Stringsp3'
+import Stringsp3 from './Strings/Stringsp3'
 import Stringsp4 from './Strings/Stringsp4'
 import Arraysp1 from './Arrays/Arrayp1'
 import Arraysp2 from './Arrays/Arrayp2'
@@ -124,6 +124,9 @@ function App() {
 
         {/* Strings */}
         <Route exact path="/strings" render={(props) => <Stringsp1 {...props} />} />
+        <Route exact path="/stringsp2" render={(props) => <Stringsp2 {...props} />} />
+        <Route exact path="/stringsp3" render={(props) => <Stringsp3 {...props} />} />
+        <Route exact path="/stringsp4" render={(props) => <Stringsp4 {...props} />} />
 
         {/* Arrays */}
         <Route exact path="/arrays" render={(props) => <Arraysp1 {...props} />} />

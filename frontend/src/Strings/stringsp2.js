@@ -1,9 +1,9 @@
 import React from 'react';
-import { link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
-function stringsp2(props) {
+function Stringsp2(props) {
     const routeChange = () => {
         let path = `/objectsp4`;
         //history.push(path);
@@ -89,4 +89,4 @@ function stringsp2(props) {
     );
 }
 
-export default stringsp2;
+export default Stringsp2;
