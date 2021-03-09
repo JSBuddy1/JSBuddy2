@@ -1,11 +1,12 @@
-import React, {useState} from "react";
-import {slides} from "./StringSlides";
+import React,{useState} from 'react';
+import {slides} from "./ArraySlides";
 import Playground from "../components/CodeEditor/Playground";
 import {describe, it, expect, run} from "jest-lite";
 
-function Strings(props) {
-    let [page, setPage] = useState(props.match.params.page);
 
+function Arrays(props) {
+
+    let [page, setPage] = useState(props.match.params.page);
     let [code, setCode] = useState("");
   
     const switchPage = () => {
@@ -33,11 +34,10 @@ function Strings(props) {
           alert("try again");
         }
       }
-    
-    
+
     return (
         <div>
-             <h3>{slides[page]?.text}</h3>
+        <h3>{slides[page]?.text}</h3>
       <div dangerouslySetInnerHTML={{ __html: slides[page]?.html }}></div>
       <br />
       {slides[page]?.playground ? (
@@ -51,8 +51,9 @@ function Strings(props) {
       <span></span>
       {props.match.params.page} {page} <span></span>
       <button onClick={switchPage}>Next</button>
+            
         </div>
     );
 }
 
-export default Strings;
+export default Arrays;

@@ -15,7 +15,7 @@ export const slides = [
     <p>The code to be executed, by the function, is placed inside curly brackets aka moustaches: {"{}"} </p>
     <p>Pratice below and write a function with the name of multiplication that takes 2 parametrs(x and y)</p>
     <p>That returns 10 * 100</p>`,
-    playground: true,
+    playground: false,
   },
   { text: "Parameters", html:`
   <p>Eww what is that?</p>
