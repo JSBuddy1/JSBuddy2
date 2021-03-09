@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Stringsp2(props) {
     const routeChange = () => {
-        let path = `/objectsp4`;
+        let path = `/stringsp3`;
         //history.push(path);
     };
     return (

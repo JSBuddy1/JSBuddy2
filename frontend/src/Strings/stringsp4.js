@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 
-function Stringsp2(props) {
+function Stringsp4(props) {
 
     const routeChange = () => {
-        let path = `/stringsp2`;
+        let path = `/stringsp5`;
         //history.push(path);
     };
 
@@ -83,11 +83,11 @@ function Stringsp2(props) {
                 <button
                     style={{ display: "flex", alignItems: "flex-end" }}
                     onClick={routeChange}>{" "}
-                    <Link to="/stringsp2">Next Slide</Link>{" "}
+                    <Link to="/stringsp5">Next Slide</Link>{" "}
                 </button>
             </div>
         </div>
     );
 }
 
-export default Stringsp2;
+export default Stringsp4;

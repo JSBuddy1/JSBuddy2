@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Stringsp3(props) {
     const routeChange = () => {
-        let path = `/stringsp4`;
+        let path = `/stringsp3`;
         //history.push(path);
     };
     return (
