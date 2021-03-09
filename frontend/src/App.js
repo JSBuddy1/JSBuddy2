@@ -19,7 +19,11 @@ import { Switch, Route, Link, useHistory } from 'react-router-dom'
 import Variablesp1 from './Variables/Variablesp1'
 import Variablesp2 from './Variables/Variablesp2'
 import Variablesp3 from './Variables/Variablesp3'
+import Variablesp4 from './Variables/Variablesp4'
 import Stringsp1 from './Strings/Stringsp1'
+import Stringsp2 from './Strings/Stringsp2'
+import stringsp3 from './Strings/Stringsp3'
+import Stringsp4 from './Strings/Stringsp4'
 import Arraysp1 from './Arrays/Arrayp1'
 import Arraysp2 from './Arrays/Arrayp2'
 import Arraysp3 from './Arrays/Arrayp3'
@@ -97,7 +101,7 @@ function App() {
           setGuess(value)
         }}
       /> */}
-{/* 
+      {/* 
       <button onClick={checkAnswer}>Submit Guess</button> */}
 
       <Switch>
@@ -135,7 +139,7 @@ function App() {
         <Route exact path="/objectsp3" render={(props) => <Objectsp3 {...props} />} />
         <Route exact path="/objectsp4" render={(props) => <Objectsp4 {...props} />} />
 
-        
+
         {/* Functions */}
         <Route exact path="/functions" render={(props) => <Functionsp1 {...props} />} />
         {/* Parameters */}
