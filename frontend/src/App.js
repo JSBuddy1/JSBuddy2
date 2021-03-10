@@ -7,7 +7,7 @@ import 'codemirror/mode/javascript/javascript.js'
 import { UnControlled as CodeMirror } from 'react-codemirror2'
 import { useEffect, useState } from 'react'
 import './App.css';
-import prettier from "prettier/standalone";
+
 // import babylon from "prettier/parser-babel";
 import Home from './components/Home'
 import Auth from './components/Auth'
