@@ -1,8 +1,8 @@
-import {describe, it, expect, run} from "jest-lite";
+import { describe, it, expect, run } from "jest-lite";
 export const slides = [
-    {
-        text: 'What is an Array?',
-        html: `<p>An array is a special variable, which can hold more than one value at a time.</p>
+  {
+    text: "What is an Array?",
+    html: `<p>An array is a special variable, which can hold more than one value at a time.</p>
         <p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
         <p>var car1 = "Saab";<br/>
            var car2 = "Volvo";<br/>
@@ -12,22 +12,17 @@ export const slides = [
         <p>The solution is an array!</p>
         <p>An array can hold many values under a single name, and you can access the values by referring to it by what number in line it is</p>
 `,
-      playground: true,
-        test: (fn) => {
-          it("returns an array of strings", () => {
-            expect(fn(fn = [])).toBe('')
-          })
-       }
-},
-// test: (fn) => {
-//   it("adds the two given numbers", () => {
-//     expect(fn(2, 2)).toBe(4);
-//   });
-// },
-// },
-    {
-        text: 'Declaration',
-        html: `<p>In JavaScript, an array is declared using square brackets ---> [ ].</p>
+    playground: true,
+    className: "let",
+    test: (arr) => {
+      it("adds the two given numbers", () => {
+        expect(arr).toContain("beer");
+      });
+    },
+  },
+  {
+    text: "Declaration",
+    html: `<p>In JavaScript, an array is declared using square brackets ---> [ ].</p>
        
             <p>whatever is in the array, we will refer to it as the element of that
             array;<br/>
@@ -45,20 +40,21 @@ export const slides = [
         <p>let animalsArray = [];</p>
         <p>const animalsArray = ['dog', 'cat', 'rabbit'];</p>
         <p>Here is your first array! And it’s a furry one!</p>,`,
-        playground: true,
-        // describe('arrayContaining', () => {
-        //   const expected = ['Alice', 'Bob'];
-        //   it('matches even if received contains additional elements', () => {
-        //     expect(['Alice', 'Bob', 'Eve']).toEqual(expect.arrayContaining(3));
-        //   });
-        //   it('does not match if received does not contain expected elements', () => {
-        //     expect(['Bob', 'Eve']).not.toEqual(expect.arrayContaining(3));
-        //   });
-        // });
-    },
-    {
-        text: 'Adding and Removing Elements',
-        html: `<p>It would be useless not to be able to change the structure of the array, either by adding elements or removing them.</p>
+    playground: true,
+    className: "const",
+    // describe('arrayContaining', () => {
+    //   const expected = ['Alice', 'Bob'];
+    //   it('matches even if received contains additional elements', () => {
+    //     expect(['Alice', 'Bob', 'Eve']).toEqual(expect.arrayContaining(3));
+    //   });
+    //   it('does not match if received does not contain expected elements', () => {
+    //     expect(['Bob', 'Eve']).not.toEqual(expect.arrayContaining(3));
+    //   });
+    // });
+  },
+  {
+    text: "Adding and Removing Elements",
+    html: `<p>It would be useless not to be able to change the structure of the array, either by adding elements or removing them.</p>
         <p>Certain array methods allow us to manipulate with array elements, so let’s talk about:</p>
         <h3>Push & Pop</h3>
         <p>Using .push lets you add a new element to the end of the array! Think of it like pushing someone into the back of a long line.</p>
@@ -68,10 +64,10 @@ export const slides = [
         <h4>And now we push!</h4>
         <p>cookiesArray.push “snickerdoodle”</p>
         <p>console.log(‘cookiesArray’) => chocolate chip, oreos, sugar cookies, snickerdoodle</p>`,
-    },
-    {
-        text: 'Pop!',
-        html: `<h3>OH NO!!!!</h3>
+  },
+  {
+    text: "Pop!",
+    html: `<h3>OH NO!!!!</h3>
         <p>You are about to make your mom all these cookies 🍪 and forgot she doesn’t like cinnamon! <br/> Now we definitely should take snickerdoodles out of the list!</p>
 
         <p>If you want to remove that unwanted last element from your wonderful cookies array 🍪 , all you need to do is pop it right out of there!</p>
@@ -85,10 +81,10 @@ export const slides = [
 
         <img src={'./images/cookies.jpeg'} style={{width: ""}} alt="cookies"/>
             <p>Ohhhweeee thank goodness we took those snickerdoodles out of moms wonderful cookie arrangement.<br/> We don’t want her feeling like she is about to do the cinnamon challenge do we?</p>`,
-    },
-    {
-        text: 'Shift & Unshift',
-        html: `<p>  It would be useless not to be able to change the structure of the array, either by adding elements or removing them.</p>
+  },
+  {
+    text: "Shift & Unshift",
+    html: `<p>  It would be useless not to be able to change the structure of the array, either by adding elements or removing them.</p>
 
         <p>Certain array methods allow us to manipulate with array elements, so let’s talk about:</p>
 
@@ -106,10 +102,9 @@ export const slides = [
             const superFunExtraStuffArray = [“milk”, “chocolates”, “roses”]<br/>
             superFunExtraStuffArray.unshift(“coffee”)<br/>
             console.log(‘superFunExtraStuffArray’) => coffee, milk, chocolates, roses</p>`,
-    },
-    // {
-    //     text: '',
-    //     html: ``,
-    // },
-    
-]
+  },
+  // {
+  //     text: '',
+  //     html: ``,
+  // },
+];
