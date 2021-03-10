@@ -7,14 +7,14 @@ export const slides = [
             
         <p>In real life, a car is an object.
         A car has properties like weight and color, and methods like start and stop:</p>
-        <ul>
-            <li>All cars have the same properties, but the property values differ from car to car.</li>
-            <li>All cars have the same properties, but the property values differ from car to car.</li>
-            <li>All cars have the same methods, but the methods are performed at different times.</li>
-        </ul>
+      
+            All cars have the same properties, but the property values differ from car to car.</br>
+            All cars have the same properties, but the property values differ from car to car.</br>
+            All cars have the same methods, but the methods are performed at different times.</br>
+    
             <p> You have already learned that JavaScript variables are containers for data values.<br/>
         This code assigns a simple value (Fiat) to a variable named car:</p>
-        <h3>let car = "Fiat";</h3>
+        <p>let car = "Fiat";</p>
         <p> Objects are variables too. But objects can contain many values.<br/>
         This code assigns many values (Fiat, 500, white) to a variable named car:</p>
         <h3>Example</h3>
@@ -24,12 +24,12 @@ export const slides = [
             color:"white"};</p>`,
     },
     {
-        text: 'AVENGERS ASSEMBLE',
+        text: 'AVENGERS ASSEMBLE 🦸🏻‍♀️🦸🏻‍♂️',
         html: `<p>Alright so I think we are ready to create our first object. Just remember that values are written as
-        <ul>
-            <li>Name : Value pairs </li>
-            <li>Name and Value separated by a colon.</li>
-        </ul></p>
+        
+            Name : Value pairs </br>
+            Name and Value separated by a colon.</br>
+        </p>
             
         let avengers = {
             smartest: “Ironman”, 
@@ -47,26 +47,27 @@ export const slides = [
           avengers[“greenest”] => Hulk
           <h4>Dot Notation:</h4> 
           avengers.greenest => Hulk
-          
+          <br/>
           <p>Easy Peasy huh?!<br/>
-          Although there isn’t really any difference in using bracket or dot notation, dot notation is way more popular to use...and after all do we not want to be apart of the cool kids.</p>`,
+          Although there isn’t really any difference in using bracket or dot notation, dot notation is way more popular to use...<br/>and after all do we not want to be apart of the cool kids.</p>`,
     },
     {
-        text: 'Pizza Pizza Emoji',
+        text: '🍕🍕🍕🍕',
         html: `<p>Lets use our newfound knowledge of objects and create sentences with them!<br/>
         Meet my bestest best friend forever John Smith</p>
-
+        <h4>Example</h4>
         let person = {
             firstname:"John",
             lastname:"Smith",
             age:25,
             favoritefood: “Pizza” 
-        };
+        };<br/>
         
         <p>Sometimes John has a hard time saying what he feels, so let’s help him. He really loves pizza. How do we get him to say that</p>
         
         console.log(person.firstname + “loves + person.favoritefood) 
-        => “John loves Pizza”`,
+        => “John loves Pizza”<br/><br/>
+        I don't know about you guys, but I'm ready for a pizza partayyyyyyyy!🍕`,
     },
     // {
     //     text: '',
