@@ -1,56 +1,53 @@
-import axios from 'axios'
+import axios from "axios";
 
-const baseURL = `js-buddy.heroku.com/api`
-//
-const token = localStorage.getItem('token')
+const baseURL =
+  process.env.NODE_ENV == "production"
+    ? `https://js-buddy.herokuapp.com/api`
+    : "http://localhost:5000/api";
+const token = localStorage.getItem("token");
 
-const API = axios.create({ baseURL, headers: { Authorization: `Bearer ${token}` } });
+const API = axios.create({
+  baseURL,
+  headers: { Authorization: `Bearer ${token}` },
+});
 
 let resetHead = () => {
-    return {
-        headers: {
-            Authorization: `Bearer ${localStorage.getItem('token')}`
-        }
-    }
-}
-
+  return {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
+    },
+  };
+};
 
 const actions = {
+  getUser: async () => {
+    //This will go get our user every time we refresh
+    return await axios.get(`${baseURL}/user`, resetHead());
+  },
 
-    getUser: async () => {
-        //This will go get our user every time we refresh 
-        return await axios.get(`${baseURL}/user`, resetHead())
-    },
+  getMyPosts: async () => {
+    return await axios.get(`${baseURL}/myPosts`, resetHead());
+  },
+  getAllPosts: async () => {
+    return await axios.get(`${baseURL}/allPosts`, resetHead());
+  },
+  addPost: async (post) => {
+    return await axios.post(`${baseURL}/addAPost`, { post }, resetHead());
+  },
+  logIn: async (data) => {
+    localStorage.setItem("googleTokenId", data.tokenId);
 
-    getMyPosts: async () => {
-        return await axios.get(`${baseURL}/myPosts`, resetHead())
-    },
-    getAllPosts: async () => {
-        return await axios.get(`${baseURL}/allPosts`, resetHead())
-    },
-    addPost: async (post) => {
-        return await axios.post(`${baseURL}/addAPost`, { post }, resetHead())
-    },
-    logIn: async (data) => {
+    let headerObj = resetHead();
+    headerObj.headers["X-Google-Token"] = data.tokenId;
 
-        localStorage.setItem('googleTokenId', data.tokenId)
+    let resFromOurDB = await axios.post(`${baseURL}/logMeIn`, data, headerObj);
 
-        let headerObj = resetHead()
-        headerObj.headers['X-Google-Token'] = data.tokenId
+    console.log(resFromOurDB);
 
-        let resFromOurDB = await axios.post(`${baseURL}/logMeIn`, data, headerObj)
+    window.localStorage.setItem("token", resFromOurDB?.data?.token);
 
-        console.log(resFromOurDB)
+    return resFromOurDB;
+  },
+};
 
-        window.localStorage.setItem('token', resFromOurDB?.data?.token)
-
-
-
-        return resFromOurDB
-    }
-
-
-
-}
-
-export default actions
+export default actions;
