@@ -22,6 +22,12 @@ export const slides = [
             "Fiat", 
             model:"500", 
             color:"white"};</p>`,
+            playground: true ,
+            test: (obj) => {
+                it("adds the two given numbers", () => {
+                  expect(obj).toContain("cool beans");
+                });
+              },
     },
     {
         text: 'AVENGERS ASSEMBLE 🦸🏻‍♀️🦸🏻‍♂️',

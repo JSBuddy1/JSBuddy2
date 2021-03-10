@@ -16,7 +16,7 @@ export const slides = [
     className: "let",
     test: (arr) => {
       it("adds the two given numbers", () => {
-        expect(arr).toContain("beer");
+        expect(arr).toContain("cool beans");
       });
     },
   },
@@ -39,18 +39,14 @@ export const slides = [
         <h3>Example:</h3>
         <p>let animalsArray = [];</p>
         <p>const animalsArray = ['dog', 'cat', 'rabbit'];</p>
-        <p>Here is your first array! And it’s a furry one!</p>,`,
+        <p>Here is your first array! And it’s a furry one!</p>`,
     playground: true,
     className: "const",
-    // describe('arrayContaining', () => {
-    //   const expected = ['Alice', 'Bob'];
-    //   it('matches even if received contains additional elements', () => {
-    //     expect(['Alice', 'Bob', 'Eve']).toEqual(expect.arrayContaining(3));
-    //   });
-    //   it('does not match if received does not contain expected elements', () => {
-    //     expect(['Bob', 'Eve']).not.toEqual(expect.arrayContaining(3));
-    //   });
-    // });
+    test: (arr) => {
+      it("adds the two given numbers", () => {
+        expect(arr).toContain("cool beans");
+      });
+    },
   },
   {
     text: "Adding and Removing Elements",

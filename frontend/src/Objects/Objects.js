@@ -21,9 +21,10 @@ function Objects(props) {
 
     async function doesItPass(str) {
         console.log(str, typeof str);
-        const sum = new String("return " + str)(); //This is the part that needs to be better understood.
-        console.log(sum, typeof sum);
-        describe("sum", () => slides[page]?.test(sum));
+        const obj = eval(str);
+        //const sum = new String("return " + str)(); //This is the part that needs to be better understood.
+        console.log(obj, typeof obj);
+        describe("obj", () => slides[page]?.test(obj));
         const result = await run();
         console.log(result);
         let lastResult = result.pop();
