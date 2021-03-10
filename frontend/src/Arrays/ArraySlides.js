@@ -12,7 +12,19 @@ export const slides = [
         <p>The solution is an array!</p>
         <p>An array can hold many values under a single name, and you can access the values by referring to it by what number in line it is</p>
 `,
-    },
+playground: true,
+// const shoppingList = [
+//   'diapers',
+//   'kleenex',
+//   'trash bags',
+//   'paper towels',
+//   'beer',
+// ];
+// test: ('the shopping list has beer on it', () => {
+//   expect(shoppingList).toContain('beer');
+//   expect(new Set(shoppingList)).toContain('beer');
+// })
+},
     {
         text: 'Declaration',
         html: `<p>In JavaScript, an array is declared using square brackets ---> [ ].</p>
