@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL = `http://localhost:5000/api`
+const baseURL = `js-buddy.heroku.com/api`
 const token = localStorage.getItem('token')
 
 const API = axios.create({ baseURL, headers: { Authorization: `Bearer ${token}` } });
