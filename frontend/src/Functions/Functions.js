@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { slides } from "./functionSlides";
+import { slides } from "./FunctionSlides";
 import Playground from "../components/CodeEditor/Playground";
 import { describe, it, expect, run } from "jest-lite";
 
