@@ -13,6 +13,14 @@
   }
 }
 
+.let .CodeMirror-line::before {
+  content: "let arr = ";
+}
+
+.const .CodeMirror-line::before {
+  content: "const arr = ";
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -45,10 +53,9 @@ TextEditor */
 
 .top-pan {
   margin-left: 50px;
-  background-color:black;
+  background-color: black;
   width: 50%;
-  padding: .8rem;
-
+  padding: 0.8rem;
 }
 
 .pan {
@@ -65,15 +72,15 @@ TextEditor */
   display: flex;
   justify-content: space-evenly;
   color: white;
-  border-top-right-radius: .5rem;
-  border-top-left-radius: .5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
 }
 .CodeMirror {
   height: 100% !important;
 }
 .code-mirror-wrapper {
   flex-grow: 1;
-  border-bottom-right-radius: .5rem;
-  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
   overflow: hidden;
 }

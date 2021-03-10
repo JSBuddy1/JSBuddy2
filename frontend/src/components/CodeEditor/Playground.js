@@ -18,7 +18,6 @@ function Playground(props) {
 
   const typing = (e) => {
     setJs(e);
-    props.setCode(js);
   };
 
   const srcDoc = `
@@ -27,7 +26,8 @@ function Playground(props) {
 <script>${js}</script>
 </html>
 `;
-
+  props.setCode(js);
+  console.log(js);
   return (
     <>
       <div className="top-pan">
