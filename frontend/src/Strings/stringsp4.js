@@ -51,6 +51,11 @@ function Stringsp4(props) {
                 <ol></ol>
             </ul>
 
+            <p>These constructs can be really useful in some situations.
+            For example, if a user enters a number into a form's text field, it's a string.
+            However, if you want to add this number to something,
+                 you'll need it to be a number, so you could pass it through Number() to handle this</p>
+
 
 
 

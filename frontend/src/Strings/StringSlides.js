@@ -2,91 +2,127 @@ import { describe, it, expect, run } from "jest-lite";
 export const slides = [
     {
         text: "Introduction to Strings",
-    html:`
+        html: `
     <p>A string is a data type used in the programming languages which represents text.
-    <br />
-    It includes a set of characters that can also contain spaces and numbers.
-    <br />
-    For example, the word “hamburger” and the phrase “I ate three hamburgers” are both strings.
-    <br />
-    Typically, you must enclose strings in quotation marks for the data to recognize as a string.
-    <br />
-    In this article, we will discuss the details and usage of “String in JavaScript”
+    <br/>
+    <p>It includes a set of characters that can also contain spaces and numbers.</p>
+    <br/>
+   <p> For example, the word “hamburger” and the phrase “I ate three hamburgers” are both strings. </p>
+    <br/>
+    <p> Typically, you must enclose strings in quotation marks for the data to recognize as a string.</p>
+    <br/>
+    <p> In this article, we will discuss the details and usage of “String in JavaScript”</p>
     covering across the following topics:
-    <br />
+    <br/>
     </p>
 
     <ul>
         <ol>What are strings in JavaScript?</ol>
+        <br/>
+
         <ol>How to initialize Strings in JavaScript?</ol>
+        <br/>
         <ol>What inbuilt functions are provided by Strings in JavaScript?</ol>
+        <br/>
         <ol>Understanding String’s Html wrapper methods?</ol>
+        <br/>
     </ul>
 
 
     <p>
-        Similar to other programming languages, the String is one of the data types in Javascript,
-        which represent a sequence of characters. Still, in JavaScript,
+        <p>Similar to other programming languages, the String is one of the data types in Javascript,</p>
+        
+        <p>which represent a sequence of characters. Still, in JavaScript,</p>
+        
         String can be both a primitive data type and a composite data type.
-        In actual, the string in JavaScript is an object which lets you work with a series of characters
+        <br/>
+        <p>In actual, the string in JavaScript is an object which lets you work with a series of characters</p>
+        <br/>
         and possesses the following characteristics:
+        <br/>
     </p>
     <ul>
         <ol>A string represents any text inside a quote pair, and the quote pair can consist of either double or single quotes.</ol>
+        <br/>
         <ol>JavaScript doesn’t impose any limit on the number of characters that a string can hold,
-                but most of the old browsers support 255 characters only.</ol>
-        <ol>In addition to the above, JavaScript doesn’t have a particular type that represents a single character of String.
+        <br/>
+                but most of the old browsers support 255 characters only.
+                </ol>
+        <ol>In addition to the above, JavaScript doesn’t have a particular type that represents a single character of String.  <br/>
         To represent a single character, we need to use a string of length 1.
            </ol>
     </ul>
 
     <p>Lets deep dive further to understand how to declare and use strings in JavaScript.</p>`,
-    playground: false,
-  },
-  {
-      text: 'How to initialize String in JavaScript?',
-      html: `
+        playground: false,
+    },
+    {
+        text: 'How to initialize String in JavaScript?',
+        html: `
       <p>In JavaScript, we can initialize a String in the following two ways:</p>
 
       <ul>
           <ol>Using String literal</ol>
+          <br/>
           <ol>Using “new” Keyword</ol>
+          <br/>
       </ul>
       <p>Let’s discuss both of these ways in the sections below:
+      <br/>
           </p>
 
       <h2>Initializing String using “String literal” method:</h2>
+      <br/>
       <p>While creating a string object using the “string literal,” the value of the String is assigned directly to the variable.
+      < br/>
                We assign the value using the single quotes or double-quotes. Moreover, its syntax looks like below:</p>
+               <br/>
 
       <p>
 
-          <br />
+          <br/>
                  var variableName = ‘literal’; // Using single quotes
+                 <br/>
 
                  var variableName = "literal"; // Using double quotes
+                 <br/>
                </p>
 
       <p>let string = "I love Disney"</p>
+      <br/>
 
       <p>If you don't do this, or miss one of the quotes,
+      <br/>
                    you'll get an error.</p>
       <p><b>Try entering the following lines:</b></p>
+      <br/>
       <ul>
           <ol>let wrongString1 = This is a trial;</ol>
+          <br/>
           <ol>let wrongString2 = 'This is a trial;</ol>
+          <br/>
           <ol>let wrongString3 = This is a trial';</ol>
+          <br/>
       </ul>
 
-      <p>These lines don't work because any text without quotes around it is assumed
-      to be a variable name, property name, a reserved word, or similar.
-      If the browser can't find it, then an error is raised
-      (e.g. "missing; before statement").
-      If the browser can see where a string starts,
+      <p>These lines don't work because any text without quotes around it is assumed</p>
+      
+      <p>to be a variable name, property name, a reserved word, or similar.</p>
+      
+     <p> If the browser can't find it, then an error is raised  </p>
+      
+     <p> (e.g. "missing; before statement").</p>
+      
+      <p> If the browser can see where a string starts, </p>
+      
       but can't find the end of the string,
+      <br/>
       as indicated by the 2nd quote,
+      <br/>
       it complains with an error (with "unterminated string literal").
+      <br/>
       If your program is raising such errors, then go back
+      <br/>
       and check all your strings to make sure you have no missing quote marks
           </p>
 
@@ -110,10 +146,10 @@ export const slides = [
                    "is now set to have the same as value"
                    <code>string</code>
       </pre>`,
-  },
-  {
-      text: 'Single quotes vs. double quotes',
-      html: `<p>In JavaScript, you can choose single quotes or double quotes to wrap your strings in.
+    },
+    {
+        text: 'Single quotes vs. double quotes',
+        html: `<p>In JavaScript, you can choose single quotes or double quotes to wrap your strings in.
       Both of the following will work okay:</p>
   <code>
       let sgl = 'Single quotes.';
@@ -177,16 +213,21 @@ export const slides = [
               Let's try an example in our console.</p>
   <code>
       <p>let one = 'Hello, ';</p>
+      <br/>
       <p>let two = 'how are you?';</p>
+      </br>
       <p>let joined = one + two;</p>
+      <br/>
       <p>joined;</p>
   </code>
 
   <div>
       <p>The result of this is a variable called joined,
       which contains the value "Hello, how are you?".
+      <br/.
       In the last instance, we joined only two strings,
       but you can join as many as you like,
+      <br/>
       as long as you include a + between each pair.
                     Try this:</p>
   </div>
@@ -197,10 +238,10 @@ export const slides = [
   </code>
 
   <p> You can also use a mix of varibales and actual strings. Try this:</p>`,
-  },
-  {
-      text: 'How to initialize String in JavaScript?',
-      html: `p>In JavaScript, we can initialize a String in the following two ways:</p>
+    },
+    {
+        text: 'How to initialize String in JavaScript?',
+        html: `p>In JavaScript, we can initialize a String in the following two ways:</p>
 
       <ul>
           <ol>Using String literal</ol>
@@ -233,12 +274,19 @@ export const slides = [
       </ul>
 
       <p>These lines don't work because any text without quotes around it is assumed
+       <br/>
       to be a variable name, property name, a reserved word, or similar.
+      <br/>
       If the browser can't find it, then an error is raised
+      <br/>
       (e.g. "missing; before statement").
+      <br/>
       If the browser can see where a string starts,
+    
       but can't find the end of the string,
+      <br/>
       as indicated by the 2nd quote,
+
       it complains with an error (with "unterminated string literal").
       If your program is raising such errors, then go back
       and check all your strings to make sure you have no missing quote marks
@@ -264,9 +312,9 @@ export const slides = [
                    "is now set to have the same as value"
                    <code>string</code>
       </pre>`,
-  },
-//   {
-//       text: '',
-//       html: ``,
-//   }
+    },
+    //   {
+    //       text: '',
+    //       html: ``,
+    //   }
 ]

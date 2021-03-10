@@ -7,7 +7,6 @@ import 'codemirror/mode/javascript/javascript.js'
 import { UnControlled as CodeMirror } from 'react-codemirror2'
 import { useEffect, useState } from 'react'
 import './App.css';
-import prettier from "prettier/standalone";
 // import babylon from "prettier/parser-babel";
 import Home from './components/Home'
 import Auth from './components/Auth'
@@ -41,7 +40,7 @@ function App() {
       <h4>{user.email}</h4>
       <nav>
         <Link to="/">Home</Link>
-      
+
         {!user.email ? <Link to="/auth">Log in</Link> : <Link to="/profile">Profile</Link>}
       </nav>
 
@@ -57,7 +56,7 @@ function App() {
 
         {/* Strings */}
         <Route exact path="/strings/:page" render={(props) => <Strings {...props} />} />
-     
+
         {/* Arrays */}
         <Route exact path="/arrays/:page" render={(props) => <Arrays {...props} />} />
 
