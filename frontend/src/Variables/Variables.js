@@ -3,7 +3,7 @@ import {slides} from "./VariableSlides";
 import Playground from "../components/CodeEditor/Playground";
 import {describe, it, expect, run} from "jest-lite";
 
-
+console.log("hello")
 function Variables(props) {
 
     let [page, setPage] = useState(props.match.params.page);
