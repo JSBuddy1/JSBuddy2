@@ -7,17 +7,13 @@ import 'codemirror/mode/javascript/javascript.js'
 import { UnControlled as CodeMirror } from 'react-codemirror2'
 import { useEffect, useState } from 'react'
 import './App.css';
-<<<<<<< HEAD
-=======
-
->>>>>>> 7bd94df5e572d8735e7e5ba8adcc09e1c00ca8a5
 // import babylon from "prettier/parser-babel";
 import Home from './components/Home'
 import Auth from './components/Auth'
 import Profile from './components/Profile'
 import actions from './api'
 import { Switch, Route, Link, useHistory } from 'react-router-dom'
-//import Variables from './Variables/Variables'
+import Variables from './Variables/Variables'
 import Strings from './Strings/Strings'
 import Arrays from './Arrays/Arrays'
 import Objects from './Objects/Objects'
@@ -55,8 +51,8 @@ function App() {
 
         {/* Topic Routes */}
         {/* Variables */}
-        {/* <Route exact path="/variables/:page" render={(props) => <Variables {...props} />} />
-        
+        <Route exact path="/variables/:page" render={(props) => <Variables {...props} />} />
+         
 
         {/* Strings */}
         <Route exact path="/strings/:page" render={(props) => <Strings {...props} />} />
