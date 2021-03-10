@@ -24,10 +24,13 @@ function Stringsp4(props) {
 
             <p>You might expect this to return an error,
             but it works just fine.
+             <br />
             Trying to represent a string as a number doesn't really make sense,
             but representing a number as a string does,
+            <br />
             so the browser rather cleverly converts
-     the number to a string and concatenates the two strings.</p>
+     the number to a string and concatenates the two strings.
+     </p>
 
             <p>You can even do this with two numbers — you can force a number
             to become a string by wrapping it in quote marks.
