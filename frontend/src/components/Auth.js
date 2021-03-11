@@ -17,6 +17,7 @@ const Auth = (props) => {
     }
 
     return (
+        <div className="Tob">
         <GoogleLogin
             clientId={process.env.REACT_APP_GOOGLEID}
             buttonText="Signup"
@@ -24,7 +25,13 @@ const Auth = (props) => {
             onFailure={onResponse}
             cookiePolicy={"single_host_origin"}
         />
+            <div className="Bob">
+            <img src={"./images/coolCat2.gif"} style={{width:'100vh'}} alt="kids" />
+            <h4>Click on Profile to start learning</h4>
+            </div>
+        </div>
     );
+    
 }
 
 export default Auth
