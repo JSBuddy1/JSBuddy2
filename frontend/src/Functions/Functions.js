@@ -35,7 +35,8 @@ function Functions(props) {
   }
 
   return (
-    <div>
+    
+      <div className={slides[page]?.className}>
       <h3>{slides[page]?.text}</h3>
       <div dangerouslySetInnerHTML={{ __html: slides[page]?.html }}></div>
       <br />
@@ -43,7 +44,8 @@ function Functions(props) {
         <>
           <Playground setCode={setCode} language="javascript" />
           <button onClick={() => doesItPass(code)}>Submit Answer</button>
-        </>
+          </>
+        
       ) : null}
       <br></br> <br></br>
       <button onClick={prevPage}>Previous</button>

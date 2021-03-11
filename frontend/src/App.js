@@ -6,7 +6,7 @@ import 'codemirror/mode/xml/xml.js'
 import 'codemirror/mode/javascript/javascript.js'
 import { useEffect, useState } from 'react'
 import './App.css';
-
+// import babylon from "prettier/parser-babel";
 import Home from './components/Home'
 import Auth from './components/Auth'
 import Profile from './components/Profile'
@@ -22,10 +22,7 @@ import Functions from './Functions/Functions'
 function App() {
 
   const [user, setUser] = useState({})
-  let [value, setValue] = useState('')
-  let [guess, setGuess] = useState('')
-
-  const history = useHistory()
+  //const history = useHistory()
 
   useEffect(() => {
     actions.getUser().then(res => {
@@ -48,10 +45,10 @@ function App() {
         <Route exact path="/auth" render={(props) => <Auth setUser={setUser} {...props} />} />
         <Route exact path="/profile" render={(props) => <Profile user={user} {...props} />} />
 
-                              {/* Topic Routes */}
+        {/* Topic Routes */}
         {/* Variables */}
         <Route exact path="/variables/:page" render={(props) => <Variables {...props} />} />
-         
+
 
         {/* Strings */}
         <Route exact path="/strings/:page" render={(props) => <Strings {...props} />} />
