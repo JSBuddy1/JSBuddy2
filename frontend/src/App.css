@@ -125,13 +125,13 @@ TextEditor */
 /* Arrays CSS */
 
 .arraySlide {
-  background-color: #ebbfff;
-  min-height: 100%;
+  background: linear-gradient(to top, #53385f, #ebbfff);
+
 }
 
 
 /* Objects CSS */
 
 .objectSlide {
-  background-color: #faafd6;
+  background: linear-gradient(to top, #ffffff ,#faafd6);
 }

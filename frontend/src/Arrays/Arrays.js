@@ -47,7 +47,7 @@ function Arrays(props) {
       ) : null}
       <br></br> <br></br>
       
-      <div style={{padding:"50vh", display:'flex', justifyContent:'space-evenly'}}>
+      <div style={{padding:"18vh", display:'flex', justifyContent:'space-evenly'}}>
       <button onClick={prevPage}>Previous</button>
       {props.match.params.page}
       <button onClick={switchPage}>Next</button>
