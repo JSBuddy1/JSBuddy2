@@ -40,7 +40,7 @@ function Objects(props) {
       <div dangerouslySetInnerHTML={{ __html: slides[page]?.html }}></div>
       <br />
       {slides[page]?.playground ? (
-        <div className={slides[page]?.className}>
+        <div >
           <Playground setCode={setCode} language="javascript" />
           <button onClick={() => doesItPass(code)}>Submit Answer</button>
         </div>
@@ -48,7 +48,7 @@ function Objects(props) {
       <br></br> <br></br>
       <div
         style={{
-          padding: "50vh",
+          padding: "18vh",
           display: "flex",
           justifyContent: "space-evenly",
         }}

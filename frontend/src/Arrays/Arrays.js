@@ -37,22 +37,28 @@ function Arrays(props) {
   return (
     <div className={slides[page]?.className}>
       <h3>{slides[page]?.text}</h3>
-      <div dangerouslySetInnerHTML={{ __html: slides[page]?.html }}></div>
-      <br />
+      <div dangerouslySetInnerHTML={{ __html: slides[page]?.html}}></div>
+        
+      <div>{slides[page]?.image}</div>
+      <br/>
       {slides[page]?.playground ? (
-        <div className={slides[page]?.className}>
-        <Playground setCode={setCode} language="javascript" />
+        <div>
+          <Playground setCode={setCode} language="javascript" id={slides[page]?.id}/>
           <button onClick={() => doesItPass(code)}>Submit Answer</button>
         </div>
       ) : null}
       <br></br> <br></br>
-      
-      <div style={{padding:"10vh", display:'flex', justifyContent:'space-evenly'}}>
-      <button onClick={prevPage}>Previous</button>
-      {props.match.params.page}
-      <button onClick={switchPage}>Next</button>
-          </div>
-          
+      <div
+        style={{
+          padding: "18vh",
+          display: "flex",
+          justifyContent: "space-evenly",
+        }}
+      >
+          <button onClick={prevPage}>Previous</button>
+        {props.match.params.page}
+        <button onClick={switchPage}>Next</button>
+      </div>
     </div>
   );
 }
