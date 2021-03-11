@@ -21,6 +21,7 @@
   content: "const arr = ";
 }
 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -46,6 +47,7 @@
 }
 
 div.CodeMirror-code {
+
   text-align: left;
 }
 /* 
@@ -53,20 +55,21 @@ TextEditor */
 
 .top-pan {
   margin-left: 50px;
-  background-color: black;
   width: 50%;
-  padding: 0.8rem;
+  padding: 0.4rem;
   margin-left: 25%;
+  /* background-color: black; */
 }
 
-/* .pan {
-  display: flex;
+/* .pan { */
+  /* display: flex;
   padding: 5px;
-  background-color: lightslategray;
-  border: solid black 2px;
-  margin-left: 50px;
-  margin-right: 692px;
-} */
+  background-color: lightslategray; */
+  /* border: solid black 2px; */
+  /* margin-left: 50px;
+  margin-right: 692px; */
+/* } */
+
 .pan-title {
   padding: 5px;
   background-color: orange;
@@ -118,4 +121,17 @@ TextEditor */
   /* linear-gradient(to bottom, rgb(188, 228, 185) , rgb(95, 255, 2)); */
   /* height: 800px; */
   border: solid black 5px;
+}
+/* Arrays CSS */
+
+.arraySlide {
+  background-color: #ebbfff;
+  min-height: 100%;
+}
+
+
+/* Objects CSS */
+
+.objectSlide {
+  background-color: #faafd6;
 }
