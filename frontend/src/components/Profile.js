@@ -15,13 +15,6 @@ function Profile(props) {
         actions.getMyPosts().then(res => setMyPosts(res.data))
     }, [])
 
-    const showPosts = () => {
-        return myPosts.map(post => {
-            return (
-                <li key={post._id}>{post.post}</li>
-            )
-        })
-    }
     console.log(myPosts)
     return (
         <div>
@@ -46,12 +39,6 @@ function Profile(props) {
             <Link to="/functions">
                 <h3>Functions</h3>
             </Link>
-
-            <Link to="/parameters">
-                <h3>Parameter</h3>
-            </Link>
-
-           
 
         </div>
     );

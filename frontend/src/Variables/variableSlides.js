@@ -127,6 +127,7 @@ var two = 'two';  // variable stores string value<br/>
     <p>value assigned to b</p>
     8
     
+    
   },
     {
       text: <h2>Variable naming</h2>

@@ -47,11 +47,16 @@ function Functions(props) {
           </>
         
       ) : null}
-      <br></br> <br></br>
+      <div
+        style={{
+          padding: "18vh",
+          display: "flex",
+          justifyContent: "space-evenly",
+        }}
+      >
       <button onClick={prevPage}>Previous</button>
-      <span></span>
-      {props.match.params.page} {page} <span></span>
-      <button onClick={switchPage}>Next</button>
+        {props.match.params.page}
+        <button onClick={switchPage}>Next</button></div>
     </div>
   );
 }
