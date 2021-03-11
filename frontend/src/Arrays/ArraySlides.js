@@ -13,8 +13,8 @@ export const slides = [
         <p>An array can hold many values under a single name, and you can access the values by referring to it by what number in line it is</p>
 `,
     playground: true,
-    className: "let" ,
-    className: "arraySlide",
+    id: "let" ,
+    className: "arraySlideT",
     test: (arr) => {
       it("adds the two given numbers", () => {
         expect(arr).toContain("cool beans");
@@ -43,7 +43,7 @@ export const slides = [
         <p>Here is your first array! And it’s a furry one!</p>`,
     playground: true,
     className: "const",
-    className: "arraySlide",
+    className: "arraySlideB",
     test: (arr) => {
       it("adds the two given numbers", () => {
         expect(arr).toContain("cool beans");
@@ -62,7 +62,7 @@ export const slides = [
         <h4>And now we push!</h4>
         <p>cookiesArray.push “snickerdoodle”</p>
         <p>console.log(‘cookiesArray’) => chocolate chip, oreos, sugar cookies, snickerdoodle</p>`,
-  className: "arraySlide",
+  className: "arraySlideT",
   },
   {
     text: "Pop!",
@@ -78,9 +78,10 @@ export const slides = [
         <p>const  cookiesArray = [“chocolate chip”, “oreos”, “sugar cookies”, “snickerdoodles”]</p>
         <p>cookiesArray.pop() => chocolate chip, oreos, sugar cookies</p>
 
-        <img src={'./images/cookies.jpeg'} style={{width: ""}} alt="cookies"/>
+
             <p>Ohhhweeee thank goodness we took those snickerdoodles out of moms wonderful cookie arrangement.<br/> We don’t want her feeling like she is about to do the cinnamon challenge do we?</p>`,
-    className: "arraySlide",
+    className: "arraySlideB",
+    image:`<img src='./images/cookies.jpeg' style={{width: ""}} alt="cookies"/>`
   },
   {
     text: "Shift & Unshift",
@@ -102,7 +103,7 @@ export const slides = [
             const superFunExtraStuffArray = [“milk”, “chocolates”, “roses”]<br/>
             superFunExtraStuffArray.unshift(“coffee”)<br/>
             console.log(‘superFunExtraStuffArray’) => coffee, milk, chocolates, roses</p>`,
-    className: "arraySlide",
+    className: "arraySlideT",
   },
   // {
   //     text: '',

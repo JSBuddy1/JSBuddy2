@@ -29,7 +29,7 @@ export const slides = [
             <h4>Now show me what you've learned!</h4>
             `,
             playground: true ,
-            className:'objectSlide',
+            className:'objectSlideT',
             test: (obj) => {
                 it("adds the two given numbers", () => {
                   expect(obj).toContain("cool beans");
@@ -64,7 +64,7 @@ export const slides = [
         };
         
             <p>Congrats you built an object, and by doing so you made the Avengers a new squad!</p>`,
-            className:'objectSlide',
+            className:'objectSlideB',
             playground: true,
             test: (obj) => {
                 it("adds the two given numbers", () => {
@@ -105,7 +105,7 @@ export const slides = [
         };
         </p>
           `,
-          className:'objectSlide',
+          className:'objectSlideT',
           playground: true,
           test: (obj) => {
             it("adds the two given numbers", () => {
@@ -138,7 +138,7 @@ export const slides = [
         Can you guys show me one last thing before we wrap up Objects. 
         Show me how we could show <br/><br/>
         "John is 25"`,
-        className:'objectSlide',
+        className:'objectSlideB',
         playground: true,
         test: (obj) => {
             it("adds the two given numbers", () => {

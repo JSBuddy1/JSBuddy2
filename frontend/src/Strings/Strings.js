@@ -46,11 +46,10 @@ function Strings(props) {
           <button onClick={() => doesItPass(code)}>Submit Answer</button>
         </>
       ) : null}
-      <br></br> <br></br>
-      <button onClick={prevPage}>Previous</button>
-      <span></span>
-      {props.match.params.page} {page} <span></span>
-      <button onClick={switchPage}>Next</button>
+        <div style= {{display:'flex', justifyContent: 'space-evenly'}} >
+        <button onClick={switchPage}>Next</button>
+      {/* {props.match.params.page} */}
+      <button onClick={prevPage}>Previous</button></div>
         </div>
     );
 }
