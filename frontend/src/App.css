@@ -126,12 +126,12 @@ div.CodeMirror-code {
 }
 /* Arrays CSS */
 
-.arraySlide {
+/* .arraySlide {
   background-color: #ebbfff;
   height: 800px;
-}
+} */
 /* Arrays CSS */
-#arraySlideT {
+.arraySlideT {
   background: linear-gradient(to top, #e3cff1, #d78ef8);
 }
 .arraySlideB {

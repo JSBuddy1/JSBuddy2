@@ -14,7 +14,7 @@ export const slides = [
 `,
     playground: true,
     id: "let" ,
-    className: "arraySlideT",
+    className: "arraySlideT let",
     test: (arr) => {
       it("adds the two given numbers", () => {
         expect(arr).toContain("cool beans");
@@ -43,7 +43,7 @@ export const slides = [
         <p>Here is your first array! And it’s a furry one!</p>`,
     playground: true,
     className: "const",
-    className: "arraySlideB",
+    className: "arraySlideT let",
     test: (arr) => {
       it("adds the two given numbers", () => {
         expect(arr).toContain("cool beans");
@@ -57,11 +57,12 @@ export const slides = [
         <h3>Push & Pop</h3>
         <p>Using .push lets you add a new element to the end of the array! Think of it like pushing someone into the back of a long line.</p>
         <h3>Examples</h3>
-        <p>const cookiesArray = [“chocolate chip”, “oreos”, “sugar cookies”]</p>
-        <p>console.log(‘cookiesArray’) => chocolate chip, oreos, sugar cookies</p>
+        <p>const cookiesArray = [<br/>
+          “chocolate chip”,<br/> “oreos”,<br/> “sugar cookies”];</p>
+        <p>=> chocolate chip, oreos, sugar cookies</p>
         <h4>And now we push!</h4>
         <p>cookiesArray.push “snickerdoodle”</p>
-        <p>console.log(‘cookiesArray’) => chocolate chip, oreos, sugar cookies, snickerdoodle</p>`,
+        <p> => chocolate chip, oreos, sugar cookies, snickerdoodle</p>`,
   className: "arraySlideT",
   },
   {
@@ -78,10 +79,10 @@ export const slides = [
         <p>const  cookiesArray = [“chocolate chip”, “oreos”, “sugar cookies”, “snickerdoodles”]</p>
         <p>cookiesArray.pop() => chocolate chip, oreos, sugar cookies</p>
 
-
+        <img src='/images/cookies.jpeg' alt="cookies"/>
             <p>Ohhhweeee thank goodness we took those snickerdoodles out of moms wonderful cookie arrangement.<br/> We don’t want her feeling like she is about to do the cinnamon challenge do we?</p>`,
     className: "arraySlideB",
-    image:`<img src='./images/cookies.jpeg' style={{width: ""}} alt="cookies"/>`
+    image:``
   },
   {
     text: "Shift & Unshift",
