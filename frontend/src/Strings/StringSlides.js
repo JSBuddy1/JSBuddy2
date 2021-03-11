@@ -208,11 +208,13 @@ export const slides = [
        and there are some special codes besides</p>
 
   <h2>Concatenating strings</h2>
-  <p>Concatenate is a fancy programming word that means "join together".
-  Joining together strings in JavaScript uses the plus (+) operator,
+  <p>Concatenate is a fancy programming word that means "join together".<br/>
+
+  Joining together strings in JavaScript uses the plus (+) operator,<br/>
+
   the same one we use to add numbers together,
-  but in this context it does something different.
-              Let's try an example in our console.</p>
+  but in this context it does something different.<br/>
+              Let's try an example in our console.</p><br/>
   <code>
       <p>let one = 'Hello, ';</p>
       <br/>
@@ -243,25 +245,27 @@ export const slides = [
     },
     {
         text: 'How to initialize String in JavaScript?',
-        html: `p>In JavaScript, we can initialize a String in the following two ways:</p>
+        html: `In JavaScript, we can initialize a String in the following two ways:</p>
 
-      <ul>
-          <ol>Using String literal</ol>
-          <ol>Using “new” Keyword</ol>
-      </ul>
-      <p>Let’s discuss both of these ways in the sections below:
-          </p>
+     
+          <p>Using String literal</p></br>
+          <p>Using “new” Keyword</p><br/>
+      
+      <p><h5>Let’s discuss both of these ways in the sections below:
+          <h5></p>
 
       <h2>Initializing String using “String literal” method:</h2>
-      <p>While creating a string object using the “string literal,” the value of the String is assigned directly to the variable.
-               We assign the value using the single quotes or double-quotes. Moreover, its syntax looks like below:</p>
+      <p>While creating a string object using the “string literal,” <br/>
+      the value of the String is assigned directly to the variable.<br/>
+               We assign the value using the single quotes or double-quotes. Moreover, its syntax looks like below:</p><br/>
+
 
       <p>
 
           <br />
-                 var variableName = ‘literal’; // Using single quotes
+                 var variableName = ‘literal’; // Using single quotes<br/>
 
-                 var variableName = "literal"; // Using double quotes
+                 var variableName = "literal"; // Using double quotes<br/>
                </p>
 
       <p>let string = "I love Disney"</p>
@@ -270,9 +274,9 @@ export const slides = [
                    you'll get an error.</p>
       <p><b>Try entering the following lines:</b></p>
       <ul>
-          <ol>let wrongString1 = This is a trial;</ol>
-          <ol>let wrongString2 = 'This is a trial;</ol>
-          <ol>let wrongString3 = This is a trial';</ol>
+          <ol>let wrongString1 = This is a trial;</ol><br/>
+          <ol>let wrongString2 = 'This is a trial;</ol><br/>
+          <ol>let wrongString3 = This is a trial';</ol><br/>
       </ul>
 
       <p>These lines don't work because any text without quotes around it is assumed

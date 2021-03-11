@@ -57,22 +57,8 @@ div.CodeMirror-code {
   width: 50%;
   padding: 0.4rem;
   margin-left: 25%;
-<<<<<<< HEAD
-
 }
 
-.pan {
-  display: flex;
-  padding: 5px;
-  background-color: lightslategray;
-  border: solid black 2px;
-  margin-left: 50px;
-  margin-right: 692px;
-}
-=======
-}
-
->>>>>>> a84f3409e3c368ad411ba393938c37faa0c4ffff
 .pan-title {
   padding: 5px;
   background-color: teal;
@@ -136,8 +122,6 @@ div.CodeMirror-code {
 .objectSlideT {
   background: linear-gradient(to top, #ffffff ,#faafd6);
 }
-<<<<<<< HEAD
-=======
 .objectSlideB {
   background: linear-gradient(to bottom, #ffffff ,#faafd6);
 }
@@ -208,4 +192,3 @@ ul li a:hover:after{
   transform:scale(1);
   opacity:1;
 }
->>>>>>> a84f3409e3c368ad411ba393938c37faa0c4ffff
