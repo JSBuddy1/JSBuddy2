@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+import React, { useState } from 'react';
+=======
 import React, { useState } from "react";
+>>>>>>> a84f3409e3c368ad411ba393938c37faa0c4ffff
 import { slides } from "./VariableSlides";
 import Playground from "../components/CodeEditor/Playground";
 import { describe, it, expect, run } from "jest-lite";
@@ -8,6 +12,12 @@ function Variables(props) {
   let [page, setPage] = useState(props.match.params.page);
   let [code, setCode] = useState("");
 
+<<<<<<< HEAD
+  let [page, setPage] = useState(props.match.params.page);
+  let [code, setCode] = useState("");
+
+=======
+>>>>>>> a84f3409e3c368ad411ba393938c37faa0c4ffff
   const switchPage = () => {
     setPage(Math.min(9, ++page));
     props.history.push(String(page));
@@ -20,10 +30,17 @@ function Variables(props) {
 
   async function doesItPass(str) {
     console.log(str, typeof str);
+<<<<<<< HEAD
+    const val = eval(str);
+    //const sum = new String("return " + str)(); //This is the part that needs to be better understood.
+    console.log(val, typeof val);
+    describe("val", () => slides[page]?.test(val));
+=======
     const obj = eval(str);
     //const sum = new String("return " + str)(); //This is the part that needs to be better understood.
     console.log(obj, typeof obj);
     describe("obj", () => slides[page]?.test(obj));
+>>>>>>> a84f3409e3c368ad411ba393938c37faa0c4ffff
     const result = await run();
     console.log(result);
     let lastResult = result.pop();
@@ -54,8 +71,15 @@ function Variables(props) {
         }}
       >
       <button onClick={prevPage}>Previous</button>
+<<<<<<< HEAD
+      <span></span>
+      {props.match.params.page} {page} <span></span>
+      <button onClick={switchPage}>Next</button>
+
+=======
       {props.match.params.page}
       <button onClick={switchPage}>Next</button></div>
+>>>>>>> a84f3409e3c368ad411ba393938c37faa0c4ffff
     </div>
   );
 }
