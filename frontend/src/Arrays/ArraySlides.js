@@ -79,10 +79,10 @@ export const slides = [
         <p>const  cookiesArray = [“chocolate chip”, “oreos”, “sugar cookies”, “snickerdoodles”]</p>
         <p>cookiesArray.pop() => chocolate chip, oreos, sugar cookies</p>
 
-        <img src='/images/cookies.jpeg' alt="cookies"/>
+        <img src='/images/cookie.jpeg' style={{width:'100vh'}} alt="cookies"/>
             <p>Ohhhweeee thank goodness we took those snickerdoodles out of moms wonderful cookie arrangement.<br/> We don’t want her feeling like she is about to do the cinnamon challenge do we?</p>`,
     className: "arraySlideB",
-    image:``
+    playground: true
   },
   {
     text: "Shift & Unshift",
