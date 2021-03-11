@@ -22,10 +22,7 @@ import Functions from './Functions/Functions'
 function App() {
 
   const [user, setUser] = useState({})
-  let [value, setValue] = useState('')
-  let [guess, setGuess] = useState('')
-
-  const history = useHistory()
+  //const history = useHistory()
 
   useEffect(() => {
     actions.getUser().then(res => {
