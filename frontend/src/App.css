@@ -53,9 +53,10 @@ TextEditor */
 
 .top-pan {
   margin-left: 50px;
-  background-color: black;
   width: 50%;
-  padding: 0.8rem;
+  padding: 0.4rem;
+  margin-left: 25%;
+
 }
 
 .pan {

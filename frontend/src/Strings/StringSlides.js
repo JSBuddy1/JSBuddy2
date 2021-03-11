@@ -150,6 +150,7 @@ export const slides = [
     {
         text: 'Single quotes vs. double quotes',
         html: `<p>In JavaScript, you can choose single quotes or double quotes to wrap your strings in.
+        <br/>
       Both of the following will work okay:</p>
   <code>
       let sgl = 'Single quotes.';
@@ -159,9 +160,10 @@ export const slides = [
       </code>
 
   <p>There is very little difference between the two,
-  and which you use is down to personal preference.
+  and which you use is down to personal preference.<br/>
+
   You should choose one and stick to it, however;
-  differently quoted code can be confusing,
+  differently quoted code can be confusing,<br/>
   especially if you use two different quotes on the same string!
           The following will return an error:</p>
 
@@ -170,18 +172,18 @@ export const slides = [
   </code>
 
   <p>The browser will think the string has not been closed
-  because the other type of quote you are not using to
-  contain your strings can appear in the string.
-                For example, both of these are okay:</p>
+  because <br/>the other type of quote you are not using to
+  contain your strings can appear in the string.<br/>
+                <br/><h3>For example, both of these are okay:</h3>
   <code>
-      let myDog = 'Hunter is smarter than yours "🤣🤣"?';
-      let chihuahua = "Always bark but can't bite.";
+      let myDog = 'Hunter is smarter than yours "🤣🤣"?';<br/>
+      <br/>let chihuahua = "Always bark but can't bite.";
       myDog;
       chihuahua;
                  </code>
 
   <p>However, you can't include the same quote mark inside the string
-  if it's being used to contain them. The following will error,
+  if it's being used to contain them.<br/> The following will error,
                      as it confuses the browser as to where the string ends</p>
 
   <code>
@@ -192,10 +194,10 @@ export const slides = [
 
 
   <h2>Escaping characters in a string</h2>
-  <p>To fix our previous problem code line, we need to escape the problem quote mark.
-  Escaping characters means that we do something to them to make sure
-  they are recognized as text, not part of the code. In JavaScript,
-   we do this by putting a backslash just before the character. Try this:</p>
+  <p>To fix our previous problem code line, we need to escape the problem quote mark.<br/>
+  <br/>Escaping characters means that we do something to them to make sure
+  they are recognized as text, not part of the code. <br/>In JavaScript,
+  <br/> we do this by putting a backslash just before the character. Try this:</p><br/>
 
   <code>
       <p>let bigmouth = 'I\'ve got no right to take my place...';
