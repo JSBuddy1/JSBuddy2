@@ -58,14 +58,14 @@ TextEditor */
   padding: 0.8rem;
 }
 
-.pan {
+/* .pan {
   display: flex;
   padding: 5px;
   background-color: lightslategray;
   border: solid black 2px;
   margin-left: 50px;
   margin-right: 692px;
-}
+} */
 .pan-title {
   padding: 5px;
   background-color: teal;
@@ -83,4 +83,26 @@ TextEditor */
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   overflow: hidden;
+}
+
+/* function1 */
+.fun1 html{
+  background-color: teal;
+  color: teal;
+  border: solid yellow 10px;
+}
+.fun1 text{
+  background-color: teal;
+  color: teal;
+  border: solid orange 10px;
+}
+.fun1 {
+  background-color: teal;
+  color: teal;
+  border: solid red 10px
+}
+.fun1 p{
+  background-color: teal;
+  color: white;
+  border: solid purple 10px
 }

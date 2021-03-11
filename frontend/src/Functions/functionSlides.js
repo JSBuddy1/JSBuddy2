@@ -1,6 +1,7 @@
 import { describe, it, expect, run } from "jest-lite";
 export const slides = [
   {
+    className: "fun1",
     text: "Functions",
     html: `<p>What the heck is it?</p>
     <p><b>function</b> add(a, b) { </p>
