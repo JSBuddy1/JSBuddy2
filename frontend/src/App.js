@@ -4,7 +4,6 @@ import 'codemirror/theme/material.css'
 import 'codemirror/theme/neat.css'
 import 'codemirror/mode/xml/xml.js'
 import 'codemirror/mode/javascript/javascript.js'
-import { UnControlled as CodeMirror } from 'react-codemirror2'
 import { useEffect, useState } from 'react'
 import './App.css';
 // import babylon from "prettier/parser-babel";
@@ -13,7 +12,7 @@ import Auth from './components/Auth'
 import Profile from './components/Profile'
 import actions from './api'
 import { Switch, Route, Link, useHistory } from 'react-router-dom'
-//import Variables from './Variables/Variables'
+// import Variables from './Variables/Variables'
 import Strings from './Strings/Strings'
 import Arrays from './Arrays/Arrays'
 import Objects from './Objects/Objects'
@@ -49,10 +48,10 @@ function App() {
         <Route exact path="/auth" render={(props) => <Auth setUser={setUser} {...props} />} />
         <Route exact path="/profile" render={(props) => <Profile user={user} {...props} />} />
 
-        {/* Topic Routes */}
+                              {/* Topic Routes */}
         {/* Variables */}
-        {/* <Route exact path="/variables/:page" render={(props) => <Variables {...props} />} />
-        
+        {/* <Route exact path="/variables/:page" render={(props) => <Variables {...props} />} /> */}
+         
 
         {/* Strings */}
         <Route exact path="/strings/:page" render={(props) => <Strings {...props} />} />
@@ -71,24 +70,5 @@ function App() {
   );
 }
 
-async function doesItPass(str, history) {
-  console.log(str, typeof str)
-  const sum = new Function('return ' + str)() //This is the part that needs to be better understood. 
-  console.log(sum, typeof sum)
-  describe('sum', () => {
-    it('adds the two given numbers', () => {
-      expect(sum(2, 2)).toBe(4);
-    });
-  });
-  const result = await run();
-  console.log(result);
-  let lastResult = result.pop()
-  if (lastResult.status == 'pass') {
-    alert('pass')
-    history.push('variablep2')
-  } else {
-    alert('try again')
-  }
-}
 
 export default App;

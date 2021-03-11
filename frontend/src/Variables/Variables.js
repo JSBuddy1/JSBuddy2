@@ -1,10 +1,10 @@
 import React,{useState} from 'react';
-import {slides} from "./ObjectSlides";
+import {slides} from "./VariableSlides";
 import Playground from "../components/CodeEditor/Playground";
 import {describe, it, expect, run} from "jest-lite";
 
-
-function Objects(props) {
+console.log("hello")
+function Variables(props) {
 
     let [page, setPage] = useState(props.match.params.page);
     let [code, setCode] = useState("");
@@ -57,4 +57,4 @@ function Objects(props) {
     );
 }
 
-export default Objects;
+export default Variables;
