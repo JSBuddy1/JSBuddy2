@@ -14,6 +14,7 @@ export const slides = [
 `,
     playground: true,
     className: "let" ,
+    className: "arraySlide",
     test: (arr) => {
       it("adds the two given numbers", () => {
         expect(arr).toContain("cool beans");
@@ -42,6 +43,7 @@ export const slides = [
         <p>Here is your first array! And it’s a furry one!</p>`,
     playground: true,
     className: "const",
+    className: "arraySlide",
     test: (arr) => {
       it("adds the two given numbers", () => {
         expect(arr).toContain("cool beans");
@@ -60,6 +62,7 @@ export const slides = [
         <h4>And now we push!</h4>
         <p>cookiesArray.push “snickerdoodle”</p>
         <p>console.log(‘cookiesArray’) => chocolate chip, oreos, sugar cookies, snickerdoodle</p>`,
+  className: "arraySlide",
   },
   {
     text: "Pop!",
@@ -77,6 +80,7 @@ export const slides = [
 
         <img src={'./images/cookies.jpeg'} style={{width: ""}} alt="cookies"/>
             <p>Ohhhweeee thank goodness we took those snickerdoodles out of moms wonderful cookie arrangement.<br/> We don’t want her feeling like she is about to do the cinnamon challenge do we?</p>`,
+    className: "arraySlide",
   },
   {
     text: "Shift & Unshift",
@@ -98,6 +102,7 @@ export const slides = [
             const superFunExtraStuffArray = [“milk”, “chocolates”, “roses”]<br/>
             superFunExtraStuffArray.unshift(“coffee”)<br/>
             console.log(‘superFunExtraStuffArray’) => coffee, milk, chocolates, roses</p>`,
+    className: "arraySlide",
   },
   // {
   //     text: '',
