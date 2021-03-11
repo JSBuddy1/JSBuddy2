@@ -20,23 +20,23 @@ function Profile(props) {
         <div>
             <h1>Welcome {props.user?.given_name}!</h1>
 
-            <Link to="/variables">
+            <Link to="/variables/0">
                 <h3>Variables</h3>
             </Link>
 
-            <Link to="/strings">
+            <Link to="/strings/0">
                 <h3>Strings</h3>
             </Link>
 
-            <Link to="/arrays">
+            <Link to="/arrays/0">
                 <h3>Arrays</h3>
             </Link>
 
-            <Link to="/objects">
+            <Link to="/objects/0">
                 <h3>Objects</h3>
             </Link>
             
-            <Link to="/functions">
+            <Link to="/functions/0">
                 <h3>Functions</h3>
             </Link>
 
