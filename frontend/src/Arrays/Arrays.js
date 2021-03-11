@@ -55,10 +55,9 @@ function Arrays(props) {
           justifyContent: "space-evenly",
         }}
       >
-         <button onClick={switchPage}>Next</button>
-        <button onClick={prevPage}>Previous</button>
-        {/* {props.match.params.page} */}
-     
+          <button onClick={prevPage}>Previous</button>
+        {props.match.params.page}
+        <button onClick={switchPage}>Next</button>
       </div>
     </div>
   );
