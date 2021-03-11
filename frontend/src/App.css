@@ -122,11 +122,18 @@ TextEditor */
   /* height: 800px; */
   border: solid black 5px;
 }
+.Bob img {
+  margin-top: 20px;
+  border: solid black 20px;
+}
+.Tob {
+  margin-bottom: 26px;
+}
 /* Arrays CSS */
 
 .arraySlide {
   background-color: #ebbfff;
-  min-height: 100%;
+  height: 800px;
 }
 
 
