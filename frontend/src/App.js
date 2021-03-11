@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-import { describe, it, expect, run } from 'jest-lite';
-import 'codemirror/lib/codemirror.css'
-import 'codemirror/theme/material.css'
-import 'codemirror/theme/neat.css'
-import 'codemirror/mode/xml/xml.js'
-import 'codemirror/mode/javascript/javascript.js'
-import { useEffect, useState } from 'react'
-import './App.css';
-// import babylon from "prettier/parser-babel";
-import Home from './components/Home'
-import Auth from './components/Auth'
-import Profile from './components/Profile'
-import actions from './api'
-import { Switch, Route, Link, useHistory } from 'react-router-dom'
-import Variables from './Variables/Variables'
-import Strings from './Strings/Strings'
-import Arrays from './Arrays/Arrays'
-import Objects from './Objects/Objects'
-import Functions from './Functions/Functions'
-
-=======
 import { useEffect, useState } from "react";
 import "./App.css";
 import Home from "./components/Home";
@@ -32,7 +10,6 @@ import Strings from "./Strings/Strings";
 import Arrays from "./Arrays/Arrays";
 import Objects from "./Objects/Objects";
 import Functions from "./Functions/Functions";
->>>>>>> a84f3409e3c368ad411ba393938c37faa0c4ffff
 
 function App() {
   const [user, setUser] = useState({});
@@ -61,15 +38,6 @@ function App() {
 
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />
-<<<<<<< HEAD
-        <Route exact path="/auth" render={(props) => <Auth setUser={setUser} {...props} />} />
-        <Route exact path="/profile" render={(props) => <Profile user={user} {...props} />} />
-
-        {/* Topic Routes */}
-        {/* Variables */}
-        <Route exact path="/variables/:page" render={(props) => <Variables {...props} />} />
-
-=======
         <Route
           exact
           path="/auth"
@@ -84,7 +52,6 @@ function App() {
                                            {/* Topic Routes */}
         {/* Variables */}
         <Route exact path="/variables/:page" render={(props) => <Variables {...props} />} />
->>>>>>> a84f3409e3c368ad411ba393938c37faa0c4ffff
 
         {/* Strings */}
         <Route
