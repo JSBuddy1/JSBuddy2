@@ -13,7 +13,7 @@ export const slides = [
         <p>An array can hold many values under a single name, and you can access the values by referring to it by what number in line it is</p>
 `,
     playground: true,
-    className: "let",
+    className: "let" ,
     test: (arr) => {
       it("adds the two given numbers", () => {
         expect(arr).toContain("cool beans");
