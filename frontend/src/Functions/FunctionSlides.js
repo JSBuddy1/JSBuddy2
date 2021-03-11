@@ -21,7 +21,9 @@ export const slides = [
     playground: true,
     test: false,
   },
-  { text: "Parameters", 
+  { 
+    className: "fun2",
+    text: "Parameters", 
   html:`<p>Yay more knowledge</p>
   <p>We mentioned these dudes last section</p>
   <p>function add(a, b) { </p>
@@ -40,6 +42,7 @@ export const slides = [
   <p>JavaScript functions do not check the number of arguments received.</p>
   <p>The code thing is below if you want to try stuff out.</p>`, playground: true },
   {
+    className: "fun1",
     text: "Ooooh Knowledge Check Fool", 
     html: `<p>Lets write a function that subtracts.</p>
     <p>First we need a function and we need to declare 2 parameters.</p>
@@ -65,6 +68,7 @@ export const slides = [
   },
 
   {
+    className: "fun2",
     text: "You Guessed It More Knowledge Check",  
     html: `<p>Lets write a function that divides.</p>
     <p>First we need a function and we need to declare 2 parameters.</p>
@@ -88,6 +92,7 @@ export const slides = [
   },
 
 {
+  className: "fun1",
   text: "We Can Do More Than Just Math",
   playground: true,
   html: `<p>Up to this point we have been using functions to do basic arithmetic</p>
@@ -114,6 +119,7 @@ export const slides = [
 },
 
   {
+    className: "fun2",
     text: "Its That Time Again Knowledge Check",
     html: `<p>We be back this time lets make a sentence into all uppercase</p>
     <p>Im no douche so no worries I will provide the word that will make it function</p>
@@ -126,7 +132,9 @@ export const slides = [
     },
   },
   {
-    text: "Function Invocation", html: `<p>Invoke what is this magic?</p>
+    className: "fun1",
+    text: "Function Invocation", 
+    html: `<p>Invoke what is this magic?</p>
 <p>The code inside a function is not executed when the function is defined. </p>
 <p>The code inside a function is executed when the function is invoked. </p>
 <p>It is common to use the term "call a function" instead of "invoke a function".</p>
@@ -148,7 +156,8 @@ export const slides = [
   },
 
   {
-    text:"Return",
+    className: "fun2",
+    text:"Return / Console.Log",
     html:`<p>So far you have noticed that we have been inputing return in our functions</p>
     <p>There is another option as well which is console.log<p>
     <p>There is a difference when you invoke it though</p>
@@ -162,6 +171,19 @@ export const slides = [
       <p> } </p>
     <p>console.log(add(10, 21));</p>
     <p>A return statement in a function will return a value and stop further execution. </p>
-    <p>Where as Console.log() is a side effect producing function that will print the arguments supplied to it in the console.</P>`
+    <p>Where as Console.log() is a side effect producing function that will print the arguments supplied to it in the console.</p>
+    <p>As your code gets more complex you will either want to return a value or console log and continue the work.</p>
+    <p>Its quite easy to check just right check anywhere on the page and select inspect<p>
+    <p>Once there just select console and when you write a function you will see your result on that terminal</p>
+    <p>Try it out below and go wild.</p>`,
+    playground: true,
+  },
+  {
+    className: "fun1",
+    text:"Version 2.0 Coming Soon ",
+    html:`<p>You have made it to the end of this section.</p>
+    <p>Great job peeps.</p>
+    <p>Hopefully this introduction has given you an idea of some of the stuff you can do with functions</p>
+    <p>This is just the begining and there are boatload of information out there to expand and continuing growing your skills.</p>`,
   }
 ];

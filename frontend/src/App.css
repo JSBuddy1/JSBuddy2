@@ -56,6 +56,7 @@ TextEditor */
   background-color: black;
   width: 50%;
   padding: 0.8rem;
+  margin-left: 25%;
 }
 
 /* .pan {
@@ -68,7 +69,7 @@ TextEditor */
 } */
 .pan-title {
   padding: 5px;
-  background-color: teal;
+  background-color: orange;
   display: flex;
   justify-content: space-evenly;
   color: white;
@@ -86,23 +87,35 @@ TextEditor */
 }
 
 /* function1 */
-.fun1 html{
-  background-color: teal;
-  color: teal;
-  border: solid yellow 10px;
-}
-.fun1 text{
-  background-color: teal;
-  color: teal;
-  border: solid orange 10px;
-}
+
 .fun1 {
-  background-color: teal;
-  color: teal;
-  border: solid red 10px
+  background: linear-gradient(to right, rgb(1, 1, 32) , rgb(3, 151, 151));
+  color: orange;
+  border: solid black 10px
 }
 .fun1 p{
-  background-color: teal;
   color: white;
-  border: solid purple 10px
+}
+
+/* function 2*/
+
+.fun2 {
+  background: linear-gradient(to left, rgb(1, 1, 32) , rgb(3, 151, 151));
+  color: orange;
+  border: solid black 10px;
+  height: 100%;
+}
+.fun2 p{
+  color: white;
+}
+
+.App {
+  background: 
+  linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  
+  /* linear-gradient(to bottom, rgb(188, 228, 185) , rgb(95, 255, 2)); */
+  /* height: 800px; */
+  border: solid black 5px;
 }
