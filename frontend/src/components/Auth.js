@@ -26,8 +26,8 @@ const Auth = (props) => {
             cookiePolicy={"single_host_origin"}
         />
             <div className="Bob">
+            <h4>After clicking Signup click on Profile to start learning.</h4>
             <img src={"./images/coolCat2.gif"} style={{width:'100vh'}} alt="kids" />
-            <h4>Click on Profile to start learning</h4>
             </div>
         </div>
     );
