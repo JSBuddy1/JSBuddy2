@@ -8,7 +8,7 @@ function Objects(props) {
   let [code, setCode] = useState("");
 
   const switchPage = () => {
-    setPage(Math.min(9, ++page));
+    setPage(Math.min(3, ++page));
     props.history.push(String(page));
   };
 

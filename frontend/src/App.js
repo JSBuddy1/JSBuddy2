@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <h4>{user.email}</h4>
+      {/* <h4>{user.email}</h4> */}
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>

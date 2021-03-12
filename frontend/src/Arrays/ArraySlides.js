@@ -15,7 +15,6 @@ export const slides = [
         Check out this nifty little code editor down below. You can practice writing all the colors you can dream of in array form! <br/>Check it out. Once you're ready click next for the next lesson.
 `,
     playground: true,
-    id: "let" ,
     className: "arraySlideT let",
     test: (arr) => {
       it("adds the two given numbers", () => {
@@ -47,13 +46,13 @@ export const slides = [
         <p>Help me make an array containing <br/> (Micky, Minnie, Donald, Goofy)<br/>
         Don't forget your quotes for every word!`,
     playground: true,
-    className: "const",
     className: "arraySlideT let",
     test: (arr) => {
       it("adds the two given numbers", () => {
         expect(arr).toContain("Micky, Minnie, Donald, Goofy");
       });
     },
+    button: true
   },
   {
     text: "Adding and Removing Elements",
@@ -141,6 +140,7 @@ export const slides = [
         expect(arr).toContain(`.unshift('Pluto')`);
       });
     },
+    button: true
   },
   {
     text:'Shift',
@@ -159,6 +159,7 @@ export const slides = [
         expect(arr).toContain("disneyArray.shift()");
       });
     },
+    button: true
   },
 
   {
@@ -177,5 +178,6 @@ export const slides = [
           expect(arr).toContain("myLastArray.pop()");
         });
       },
+      button: true
   }
 ];
