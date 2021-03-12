@@ -5,7 +5,7 @@ import { describe, it, expect, run } from "jest-lite";
 
 function Functions(props) {
   let [page, setPage] = useState(props.match.params.page);
-
+console.log(page)
   let [code, setCode] = useState("");
 
   const switchPage = () => {
@@ -43,7 +43,8 @@ function Functions(props) {
       {slides[page]?.playground ? (
         <>
           <Playground setCode={setCode} language="javascript" />
-          <button onClick={() => doesItPass(code)}>Submit Answer</button>
+          {!slides[page]?.button ? null:<button onClick={() => doesItPass(code)}>Submit Answer</button>}
+          
           </>
         
       ) : null}
