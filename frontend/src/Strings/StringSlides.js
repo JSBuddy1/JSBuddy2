@@ -55,16 +55,16 @@ export const slides = [
    
 
     <p>Lets deep dive further to understand how to declare and use strings in JavaScript.</p>`,
-        playground: true,
+        playground: false,
         ClassName: "stringSlider",
-        test: (str) => {
-            console.log(str)
-            it("likes 'em big", () => {
-                expect(str).toContain("big");
-            });
+        // test: (str) => {
+        //     console.log(str)
+        //     it("likes 'em big", () => {
+        //         expect(str).toContain("big");
+        //     });
 
 
-        },
+        // },
     },
     {
         text: 'How to initialize String in JavaScript?',
@@ -140,7 +140,7 @@ export const slides = [
         test: (str) => {
             console.log(str)
             it("likes 'em big", () => {
-                expect(str).toContain("big");
+                expect(str).toContain("");
             });
 
 
@@ -148,9 +148,9 @@ export const slides = [
 
 
         text: 'Single quotes vs. double quotes',
-        html: `< p > In JavaScript, you can choose single quotes or double quotes to wrap your strings in.
-        < br />
-    Both of the following will work okay:</p >
+        html: `<p> In JavaScript, you can choose single quotes or double quotes to wrap your strings in.
+        <br/>
+    Both of the following will work okay:</p>
   <code>
         let sgl = 'Single quotes.';
         let dbl = "Double quotes";
@@ -191,17 +191,19 @@ export const slides = [
 
   <p>This leads us very nicely into our next subject.</p>`,
         playground: true,
-        test: (str) => {
-            console.log(str)
-            it("likes 'em big", () => {
-                expect(str).toContain("big");
-            });
+        // test: (str) => {
+        //     console.log(str)
+        //     it("likes 'em big", () => {
+        //         expect(str).toContain("big");
+        //     });
 
 
-        },
+        // },
+        button: false,
 
-
-        test: 'Escaping characters in a string',
+    },
+    {
+        text: 'Escaping characters in a string',
         html: `<p>To fix our previous problem code line, we need to escape the problem quote mark.</p><br/>
   <br/>Escaping characters means that we do something to them to make sure
   they are recognized as text, not part of the code. <br/>In JavaScript,
@@ -270,8 +272,8 @@ export const slides = [
           <p>Using String literal</p></br >
           <p>Using “new” Keyword</p><br/>
       
-      <p><h5>Let’s discuss both of these ways in the sections below:
-          <h5></p>
+      <p><h4>Let’s discuss both of these ways in the sections below:
+          <h4></p>
 
       <h2>Initializing String using “String literal” method:</h2>
       <p>While creating a string object using the “string literal,” <br/>
@@ -335,20 +337,17 @@ export const slides = [
                 expect(str).toHaveLength(4)
             });
         },
+        button: false
     },
     {
         text: 'To Learn More',
-        html: `Visit this websites and you will amazed on what you can do with this common "string"
+        html: `Visit this websites and you will amazed on what you can do with this common "string" <br/>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">
-    <br/> The Genesis of Strings</a>
-    <a href="https://www.w3schools.com/jsref/jsref_obj_string.asp"><br/>Take a Look</a>
-    <a href="https://javascript.info/string"><br/>I love Strings</a>`,
-        playground: true,
-        test: (str) => {
-            console.log(str)
-            it("should be a certain length", () => {
-                expect(str).toHaveLength(4)
-            });
-        },
-    },
+    <br/> The Genesis of Strings</a><br/>
+    <a href="https://www.w3schools.com/jsref/jsref_obj_string.asp"><br/>Take a Look</a><br/>
+    <a href="https://javascript.info/string"><br/>I love Strings</a><br/> <br/>
+    
+    <img src='/images/codingKid.jpg' alt='kid coding' /> `,
+        playground: false,
+    }
 ]

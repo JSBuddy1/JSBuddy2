@@ -21,7 +21,7 @@ export const slides = [
          
           the label is a variable name.
         </p>
-        <img src={"./images/movingboxes.jpg"} alt="moving-boxes" />
+        <img src='/images/movingboxes.jpg' alt="moving boxes"/>
   
         <p style={{ textAlign: "justify" }}> <br/>
           
@@ -69,7 +69,7 @@ export const slides = [
 
 
     playground: true,
-    test: false,
+    button: false,
   },
   {
     text: 'Still Grooving with our Variables',
@@ -96,7 +96,7 @@ var two = 'two';  // variable stores string value<br/>
       <p>var one = 1, two = 'two', three;</p><br/>`,
 
     playground: true,
-    test: false,
+    button: false,
   },
 
   // </div>
@@ -132,7 +132,7 @@ var two = 'two';  // variable stores string value<br/>
 
 
     playground: true,
-    test: false,
+    button: false,
 
   },
 
@@ -174,11 +174,11 @@ var two = 'two';  // variable stores string value<br/>
 
       <p>The code below gives a syntax error:</p><br/>
 
-      <p>let let = 5; // can't name a variable "let", error!</p><br/>
+      <p> let = 5; // can't name a variable "let", error!</p><br/>
       <p>let return = 5; // also can't name it "return", error!</p><br/> `,
 
     playground: true,
-    test: false,
+    button: false,
 
 
 

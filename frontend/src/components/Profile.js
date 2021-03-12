@@ -89,6 +89,19 @@ function Profile(props) {
                 </div>
             </Link>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
         </div>
     );
 }

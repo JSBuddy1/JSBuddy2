@@ -9,7 +9,7 @@ function Variables(props) {
   let [code, setCode] = useState("");
 
   const switchPage = () => {
-    setPage(Math.min(9, ++page));
+    setPage(Math.min(4, ++page));
     props.history.push(String(page));
   };
 
@@ -43,7 +43,7 @@ function Variables(props) {
       {slides[page]?.playground ? (
         <>
           <Playground setCode={setCode} language="javascript" />
-          <button onClick={() => doesItPass(code)}>Submit Answer</button>
+          {!slides[page]?.button ? null:<button onClick={() => doesItPass(code)}>Submit Answer</button>}
         </>
       ) : null}
       <div
@@ -55,7 +55,8 @@ function Variables(props) {
       >
         <button onClick={prevPage}>Previous</button>
         {props.match.params.page}
-        <button onClick={switchPage}>Next</button></div>
+        <button onClick={switchPage}>Next</button>
+        </div>
     </div>
   );
 }
