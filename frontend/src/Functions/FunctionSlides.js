@@ -185,7 +185,7 @@ button: false,
     <p>A return statement in a function will return a value and stop further execution. </p>
     <p>Where as Console.log() is a side effect producing function that will print the arguments supplied to it in the console.</p>
     <p>As your code gets more complex you will either want to return a value or console log and continue the work.</p>
-    <p>Its quite easy to check just right check anywhere on the page and select inspect.<p>
+    <p>Its quite easy to check just right click anywhere on the page and select inspect.<p>
     <p>Once there just select console and when you write a function you will see your result on that terminal.</p>
     <p>Try it out below and go wild.</p>`,
     playground: true,
