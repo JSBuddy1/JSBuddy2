@@ -17,7 +17,7 @@ function Profile(props) {
 
     console.log(myPosts)
     return (
-        <div>
+        <div className = "prof">
             <h1>Welcome {props.user?.given_name}!</h1>
 
             <Link to="/variables/0">

@@ -32,7 +32,7 @@ export const slides = [
   <p>The paramters in this case are the a and b guys.</p>
   <p>Just like the function names you can name these fellows to your hearts content.</p>
   <p>Function parameters are the names listed in the function definition.</p>
-  <p>This would be the first a and b next to function
+  <p>This would be the first a and b next to function.</p>
   <p>Function arguments are the real values passed to (and received by) the function.</p>
   <p>This would the a and b pair that are on the 2nd line next to return. </p>
   <p>Yes you can name them poop1 and pee1 if you wanted to.</p>
@@ -41,7 +41,7 @@ export const slides = [
   <p>JavaScript functions do not perform type checking on the passed arguments.</p>
   <p>JavaScript functions do not check the number of arguments received.</p>
   <p>The code thing is below if you want to try stuff out.</p>`, playground: true,
-  button: true },
+  button: false },
   {
     className: "fun1",
     text: "Ooooh Knowledge Check Fool", 
@@ -81,7 +81,7 @@ export const slides = [
     <p>Here is your knowledge check.</p>
     <p>Write a function that multiplies two parameters.</p>
     <p>Again smarty pants you will not be required at this time to invoke.</p>
-    <p>We will discuss later in this section so no worries if you are like what the heck .</p>
+    <p>We will discuss later in this section so no worries if you are like what the heck.</p>
     <p>All you need to do is a write a function that multiplies 2 parameters.</p>
     <p>Good luck.</p>`,
     playground: true,
@@ -97,37 +97,41 @@ export const slides = [
   className: "fun1",
   text: "We Can Do More Than Just Math",
   playground: true,
-  html: `<p>Up to this point we have been using functions to do basic arithmetic</p>
-  <p>Lets write some functions that can do other some other stuff</p>
-  <p>Suppose someone sent me something in all caps and I was like no lets bring this down a notch</p>
-  <p>You know it lets function this son of a gun<p>
-  <p>First lets start with our function lets have it umm I know digimon</p>
-  <p>Next we will leave the () empty since we will not be passing anything on those dudes</p>
+  html: `<p>Up to this point we have been using functions to do basic arithmetic.</p>
+  <p>Lets write some functions that can do other some other stuff.</p>
+  <p>Suppose someone sent me something in all caps and I was like no lets bring this down a notch.</p>
+  <p>You know it lets function this son of a gun.<p>
+  <p>First lets start with our function lets have it umm I know digimon.</p>
+  <p>Next we will leave the () empty since we will not be passing anything on those dudes.</p>
   <p>Next comes the moustaches {}<p>
   <p>So inside the {} lets add some info</p>
   <p>We have to declare a variable here which will be the string that will be transformed.</p>
   <p>let letter = 'I HEARD THAT YOURE DIGImon WEAK as FUdge';</p>
   <p>So above we just declared our string but now we need to affect it.</p>
-  <p>So in javascript there are a bunch of words that allow you to do lots of cool stuff</p>
-  <p>In this case we will use .toLowerCase which will convert any letter into lowercase</p>
+  <p>So in javascript there are a bunch of words that allow you to do lots of cool stuff.</p>
+  <p>In this case we will use .toLowerCase which will convert any letter into lowercase.</p>
   <p>let newLetter = letter.toLowerCase(); } <p>
-  <p>So lets see it in action</p>
+  <p>So lets see it in action.</p>
   <p>function digimon() { </p>
   <p> let letter = 'I HEARD THAT YOURE DIGImon WEAK as FUdge'; </p>
   <p> let newLetter = letter.toLowerCase(); </p>
   <p> return newLetter; </p>
   <p> } </p>
-  `
+  <p>Feel free to play around below.</p>`,
+  playground: true,
+  button: false,
 },
 
   {
     className: "fun2",
     text: "Its That Time Again Knowledge Check",
-    html: `<p>We be back this time lets make a string into all uppercase</p>
-    <p>Im no douche so no worries I will provide the word that will make it function</p>
-    <p>When you write the function make sure to include the word digimon in your string</p>
-    <p>
-    <p>Our word here is .toUpperCase </p>`,
+    html: `<p>We be back this time lets make a string into all uppercase.</p>
+    <p>Im no douche so no worries I will provide the word that will make it function.</p>
+    <p>When you write the function make sure to include the word digimon in your string.</p>
+    <p>If digimon(keep it lowercase) is not on the test it wil fail<p>
+    <p>Why digimon cause its better than Pokemon duh</p>
+    <p>Our word here is .toUpperCase </p>
+    <p>Hmm looks mighty similar to something we were doing before.</p>`,
     playground: true,
     button: true,
     test: (fn) => {
@@ -145,27 +149,30 @@ export const slides = [
 <p>It is common to use the term "call a function" instead of "invoke a function".</p>
 <p>It is also common to say "call upon a function", "start a function", or "execute a function".</p>
 <p>We will use invoke, because a JavaScript function can be invoked without being called.</p>
-<p>So looking back at our previous example</p>
+<p>So looking back at our previous example.</p>
 <p><b>function</b> add(a, b) { </p>
 <p> return  a + b; </p>
 <p> } </p>
-<p>In order to use our function lets invoke it</p>
-<p>We would need to write the name of the function and insert a value for our parameters</p>
+<p>In order to use our function lets invoke it.</p>
+<p>We would need to write the name of the function and insert a value for our parameters.</p>
 <p>add(10, 21);</p>
-<p>This is how it would look together</p>
+<p>This is how it would look together.</p>
 <p><b>function</b> add(a, b) { </p>
   <p> return  a + b; </p>
   <p> } </p>
 <p>add(10, 21);</p>
-<p>Our result would be 31</p>`,
+<p>Our result would be 31</p>
+<p>You guessed it free play area below.</p>`,
+playground: true,
+button: false,
   },
 
   {
     className: "fun2",
     text:"Return / Console.Log",
-    html:`<p>So far you have noticed that we have been inputing return in our functions</p>
+    html:`<p>So far you have noticed that we have been inputing return in our functions.</p>
     <p>There is another option as well which is console.log<p>
-    <p>There is a difference when you invoke it though</p>
+    <p>There is a difference when you invoke it though.</p>
     <p><b>function</b> add(a, b) { </p>
       <p> return  a + b; </p>
       <p> } </p>
@@ -178,8 +185,8 @@ export const slides = [
     <p>A return statement in a function will return a value and stop further execution. </p>
     <p>Where as Console.log() is a side effect producing function that will print the arguments supplied to it in the console.</p>
     <p>As your code gets more complex you will either want to return a value or console log and continue the work.</p>
-    <p>Its quite easy to check just right check anywhere on the page and select inspect<p>
-    <p>Once there just select console and when you write a function you will see your result on that terminal</p>
+    <p>Its quite easy to check just right check anywhere on the page and select inspect.<p>
+    <p>Once there just select console and when you write a function you will see your result on that terminal.</p>
     <p>Try it out below and go wild.</p>`,
     playground: true,
   },
@@ -188,7 +195,11 @@ export const slides = [
     text:"Version 2.0 Coming Soon ",
     html:`<p>You have made it to the end of this section.</p>
     <p>Great job peeps.</p>
-    <p>Hopefully this introduction has given you an idea of some of the stuff you can do with functions</p>
-    <p>This is just the begining and there are boatload of information out there to expand and continuing growing your skills.</p>`,
+    <p>Hopefully this introduction has given you an idea of some of the stuff you can do with functions.</p>
+    <p>This is just the begining and there are boatload of information out there to expand and continuing growing your skills.</p>
+    <p>While it can it be super confusing remember to keep at it.</p>
+    <p>Youd be amazed at all the cool things you can build.</p>
+    <p>You can even build games. So continue checking back and who knows what you will find in v.2</p>
+    <p>Remember you are a great human being. If your a repetilan person then I guess you're okay too.</p>`,
   }
 ];
