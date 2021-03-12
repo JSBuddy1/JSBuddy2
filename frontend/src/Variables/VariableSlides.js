@@ -93,17 +93,20 @@ var two = 'two';  // variable stores string value<br/>
       <h2>Declare Variables in a Single Line</h2><br/>
       <p>Multiple variables can also be declared in a single line separated by comma.</p><br/>
       <p><b>Example: Multiple Variables in a Single Line</b></p><br/>
-      <p>var one = 1, two = 'two', three;</p><br/>
+      <p>var one = 1, two = 'two', three;</p><br/>`,
 
-     
+    playground: true,
+    test: false,
+  },
 
-    </div>
+  // </div>
 
-    <div>
-      <h2>Declare a Variable without var Keyword</h2>
-      <p>JavaScript allows variable declaration without var keyword.<br/>
+  // <div>
+  {
+    text: 'Declare a Variable without var Keyword',
+    html: `<p>JavaScript allows variable declaration without var keyword.<br/>
              You must assign a value when you declare a variable without var keyword.</p><b/>
-    </div>
+
 
     <p>
       Example: Variable without var Keyword
@@ -125,13 +128,18 @@ var two = 'two';  // variable stores string value<br/>
          <p>value assigned to a</p>
      4
     <p>value assigned to b</p>
-    8
-    
-    
+    8<br/>`,
+
+
+    playground: true,
+    test: false,
+
   },
-    {
-      text: <h2>Variable naming</h2>
-    <p>There are two limitations on variable names in JavaScript:</p><br/>
+
+  {
+    text: 'Variable naming',
+    html: `<p> There are two limitations on variable names in JavaScript:</p>
+    <br/>
     <p>The name must contain only letters, digits, or the symbols $ and _.</p><br/>
    <h2><p>The first character must not be a digit.</p></h2>
     <p>let userName;</p><br/>
@@ -167,12 +175,13 @@ var two = 'two';  // variable stores string value<br/>
       <p>The code below gives a syntax error:</p><br/>
 
       <p>let let = 5; // can't name a variable "let", error!</p><br/>
-      <p>let return = 5; // also can't name it "return", error!</p><br/>
+      <p>let return = 5; // also can't name it "return", error!</p><br/> `,
+
+    playground: true,
+    test: false,
 
 
 
-
-`,
   },
 
 ]

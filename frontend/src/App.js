@@ -31,9 +31,6 @@ function App() {
           <li><Link to="/">Home</Link></li>
           <li> {!user.email ? <Link to="/auth">Log in</Link> : <Link to="/profile">Profile</Link>} </li>
         </ul>
-
-
-
       </nav>
 
       <Switch>

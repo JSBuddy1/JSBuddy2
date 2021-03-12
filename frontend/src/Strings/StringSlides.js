@@ -2,7 +2,8 @@ import { describe, it, expect, run } from "jest-lite";
 export const slides = [
     {
         text: "Introduction to Strings",
-        html: `
+        html:
+            `
     <p>A string is a data type used in the programming languages which represents text.
     <br/>
     <p>It includes a set of characters that can also contain spaces and numbers.</p>
@@ -16,17 +17,17 @@ export const slides = [
     <br/>
     </p>
 
-    <ul>
-        <ol>What are strings in JavaScript?</ol>
+    
+        What are strings in JavaScript?
         <br/>
 
-        <ol>How to initialize Strings in JavaScript?</ol>
+        How to initialize Strings in JavaScript?
         <br/>
-        <ol>What inbuilt functions are provided by Strings in JavaScript?</ol>
+        What inbuilt functions are provided by Strings in JavaScript?
         <br/>
-        <ol>Understanding String’s Html wrapper methods?</ol>
+        Understanding String’s Html wrapper methods?
         <br/>
-    </ul>
+   
 
 
     <p>
@@ -41,30 +42,38 @@ export const slides = [
         and possesses the following characteristics:
         <br/>
     </p>
-    <ul>
-        <ol>A string represents any text inside a quote pair, and the quote pair can consist of either double or single quotes.</ol>
+    
+        A string represents any text inside a quote pair, and the quote pair can consist of either double or single quotes.</ol>
         <br/>
-        <ol>JavaScript doesn’t impose any limit on the number of characters that a string can hold,
+        JavaScript doesn’t impose any limit on the number of characters that a string can hold,
         <br/>
                 but most of the old browsers support 255 characters only.
                 </ol>
-        <ol>In addition to the above, JavaScript doesn’t have a particular type that represents a single character of String.  <br/>
+        >In addition to the above, JavaScript doesn’t have a particular type that represents a single character of String.  <br/>
         To represent a single character, we need to use a string of length 1.
            </ol>
-    </ul>
+   
 
     <p>Lets deep dive further to understand how to declare and use strings in JavaScript.</p>`,
-        playground: false,
+        playground: true,
+        ClassName: "stringSlider",
+        test: (str) => {
+            console.log(str)
+            it("likes 'em big", () => {
+                expect(str).toContain("big");
+            });
+
+
+        },
     },
     {
         text: 'How to initialize String in JavaScript?',
-        html: `
-      <p>In JavaScript, we can initialize a String in the following two ways:</p>
+        html: `<p>In JavaScript, we can initialize a String in the following two ways:</p>
 
-      <ul>
-          <ol>Using String literal</ol>
+      
+          Using String literal
           <br/>
-          <ol>Using “new” Keyword</ol>
+          >Using “new” Keyword
           <br/>
       </ul>
       <p>Let’s discuss both of these ways in the sections below:
@@ -78,10 +87,8 @@ export const slides = [
                We assign the value using the single quotes or double-quotes. Moreover, its syntax looks like below:</p>
                <br/>
 
-      <p>
-
-          <br/>
-                 var variableName = ‘literal’; // Using single quotes
+      <p><br/>
+        var variableName = ‘literal’; // Using single quotes
                  <br/>
 
                  var variableName = "literal"; // Using double quotes
@@ -97,11 +104,11 @@ export const slides = [
       <p><b>Try entering the following lines:</b></p>
       <br/>
       <ul>
-          <ol>let wrongString1 = This is a trial;</ol>
+         let wrongString1 = This is a trial;
           <br/>
-          <ol>let wrongString2 = 'This is a trial;</ol>
+          let wrongString2 = 'This is a trial;
           <br/>
-          <ol>let wrongString3 = This is a trial';</ol>
+          let wrongString3 = This is a trial';
           <br/>
       </ul>
 
@@ -127,37 +134,29 @@ export const slides = [
           </p>
 
       <p>The following will work if you previously defined the variable string
-               — try it now:</p>
+               — try it now:</p>`,
 
-      <pre class=" brush: js notranslate"></pre>
-      <code>
-          <span class="token keyword">let</span>
-                   "badString"
-                   <span class="token operator">=</span>
-                   "string"
-                   <span class="token punctuation">;</span>
-                   "badString"
-                   <span class="token punctuation">;</span>
-      </code>
-      <pre>
-          <code>
-              badString
-                   </code>
-                   "is now set to have the same as value"
-                   <code>string</code>
-      </pre>`,
-    },
-    {
+        playground: true,
+        test: (str) => {
+            console.log(str)
+            it("likes 'em big", () => {
+                expect(str).toContain("big");
+            });
+
+
+        },
+
+
         text: 'Single quotes vs. double quotes',
-        html: `<p>In JavaScript, you can choose single quotes or double quotes to wrap your strings in.
-        <br/>
-      Both of the following will work okay:</p>
+        html: `< p > In JavaScript, you can choose single quotes or double quotes to wrap your strings in.
+        < br />
+    Both of the following will work okay:</p >
   <code>
-      let sgl = 'Single quotes.';
-      let dbl = "Double quotes";
-      sgl;
-      dbl;
-      </code>
+        let sgl = 'Single quotes.';
+        let dbl = "Double quotes";
+        sgl;
+        dbl;
+         
 
   <p>There is very little difference between the two,
   and which you use is down to personal preference.<br/>
@@ -175,12 +174,12 @@ export const slides = [
   because <br/>the other type of quote you are not using to
   contain your strings can appear in the string.<br/>
                 <br/><h3>For example, both of these are okay:</h3>
-  <code>
+  
       let myDog = 'Hunter is smarter than yours "🤣🤣"?';<br/>
       <br/>let chihuahua = "Always bark but can't bite.";
       myDog;
       chihuahua;
-                 </code>
+                 
 
   <p>However, you can't include the same quote mark inside the string
   if it's being used to contain them.<br/> The following will error,
@@ -190,11 +189,20 @@ export const slides = [
       <p>let bigmouth = 'I've got no right to take my place...';</p>
   </code>
 
-  <p>This leads us very nicely into our next subject.</p>
+  <p>This leads us very nicely into our next subject.</p>`,
+        playground: true,
+        test: (str) => {
+            console.log(str)
+            it("likes 'em big", () => {
+                expect(str).toContain("big");
+            });
 
 
-  <h2>Escaping characters in a string</h2>
-  <p>To fix our previous problem code line, we need to escape the problem quote mark.<br/>
+        },
+
+
+        test: 'Escaping characters in a string',
+        html: `<p>To fix our previous problem code line, we need to escape the problem quote mark.</p><br/>
   <br/>Escaping characters means that we do something to them to make sure
   they are recognized as text, not part of the code. <br/>In JavaScript,
   <br/> we do this by putting a backslash just before the character. Try this:</p><br/>
@@ -227,7 +235,7 @@ export const slides = [
 
   <div>
       <p>The result of this is a variable called joined,
-      which contains the value "Hello, how are you?".
+            which contains the value "Hello, how are you?".
       <br/.
       In the last instance, we joined only two strings,
       but you can join as many as you like,
@@ -236,19 +244,30 @@ export const slides = [
                     Try this:</p>
   </div>
 
-  <code>
+  
       <p>let multiple = one + one + one + one + two;
-                         multiple;</p>
-  </code>
+                         multiple;</p> <br/>
+  
 
-  <p> You can also use a mix of varibales and actual strings. Try this:</p>`,
+  <p> You can also use a mix of varibales and actual strings. Try this?????:</p>`,
+
+        playground: true,
+        test: (str) => {
+            console.log(str)
+            it("likes 'em big", () => {
+                expect(str).toContain("big");
+            });
+        },
     },
+
+
+
     {
         text: 'How to initialize String in JavaScript?',
         html: `In JavaScript, we can initialize a String in the following two ways:</p>
 
      
-          <p>Using String literal</p></br>
+          <p>Using String literal</p></br >
           <p>Using “new” Keyword</p><br/>
       
       <p><h5>Let’s discuss both of these ways in the sections below:
@@ -262,22 +281,22 @@ export const slides = [
 
       <p>
 
-          <br />
+          <br/>
                  var variableName = ‘literal’; // Using single quotes<br/>
 
-                 var variableName = "literal"; // Using double quotes<br/>
-               </p>
+                 var variableName = "literal"; // Using double quotes
+               </p><br/>
 
       <p>let string = "I love Disney"</p>
 
       <p>If you don't do this, or miss one of the quotes,
-                   you'll get an error.</p>
+                   you'll get an error.</p><br/>
       <p><b>Try entering the following lines:</b></p>
-      <ul>
-          <ol>let wrongString1 = This is a trial;</ol><br/>
-          <ol>let wrongString2 = 'This is a trial;</ol><br/>
-          <ol>let wrongString3 = This is a trial';</ol><br/>
-      </ul>
+      
+          let wrongString1 = This is a trial;<br/>
+          let wrongString2 = 'This is a trial;<br/>
+          let wrongString3 = This is a trial'; <br/>
+      
 
       <p>These lines don't work because any text without quotes around it is assumed
        <br/>
@@ -294,33 +313,42 @@ export const slides = [
       as indicated by the 2nd quote,
 
       it complains with an error (with "unterminated string literal").
-      If your program is raising such errors, then go back
+      <br/>If your program is raising such errors, then go back
       and check all your strings to make sure you have no missing quote marks
           </p>
 
       <p>The following will work if you previously defined the variable string
                — try it now:</p>
 
-      <pre class=" brush: js notranslate"></pre>
-      <code>
-          <span class="token keyword">let</span>
-                   "badString"
-                   <span class="token operator">=</span>
-                   "string"
-                   <span class="token punctuation">;</span>
-                   "badString"
-                   <span class="token punctuation">;</span>
-      </code>
-      <pre>
-          <code>
-              badString
-                   </code>
-                   "is now set to have the same as value"
-                   <code>string</code>
-      </pre>`,
+      
+     
+                  let "badString" = "string"; <br/>
+                  badString is now set to have the same as value string<br/>
+
+                  So now let Try this!!!<br/>
+
+                  <br/>Create a string that says your name and how old you are!<br/>`,
+        playground: true,
+        test: (str) => {
+            console.log(str)
+            it("should be a certain length", () => {
+                expect(str).toHaveLength(4)
+            });
+        },
     },
-    //   {
-    //       text: '',
-    //       html: ``,
-    //   }
+    {
+        text: 'To Learn More',
+        html: `Visit this websites and you will amazed on what you can do with this common "string"
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">
+    <br/> The Genesis of Strings</a>
+    <a href="https://www.w3schools.com/jsref/jsref_obj_string.asp"><br/>Take a Look</a>
+    <a href="https://javascript.info/string"><br/>I love Strings</a>`,
+        playground: true,
+        test: (str) => {
+            console.log(str)
+            it("should be a certain length", () => {
+                expect(str).toHaveLength(4)
+            });
+        },
+    },
 ]
