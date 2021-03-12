@@ -20,6 +20,9 @@ export const slides = [
             model:"250 GTI", <br/>
             color:"red"};</p>
             <p> Okay, lets practice writing an object down below!<br/>
+            
+            <img src='/images/coolcar.gif' alt="great job"/><br/>
+
             Get creative, you can use any key words you want, just be sure to include <br/>
             <h4>cool beans</h4><br/>
             Keep in mind that objects need quotes around each key word and <br/>fancy curly brackets, { } , or as I like to call them Mustaches!
@@ -61,8 +64,9 @@ export const slides = [
             greenest: “Hulk”,<br/>
             oldest: “Captain America”, <br/>
             coolest: “Black Widow”
-        };
-        
+        };<br/>
+
+        <img src='/images/avengers.png' alt="great job"/>
             <p>Congrats you built an object, and by doing so you made the Avengers a new squad!</p>`,
             className:'objectSlideB',
             playground: true,
@@ -142,7 +146,7 @@ export const slides = [
         playground: true,
         test: (obj) => {
             it("adds the two given numbers", () => {
-              expect(obj).toContain("person.firstname + ate + person.favoritefood");
+              expect(obj).toContain("person.firstname + is + person.age");
             });
           },
     },
