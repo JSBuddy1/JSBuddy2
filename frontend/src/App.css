@@ -126,7 +126,7 @@ div.CodeMirror-code {
 }
 /* Profile Page with Lessons */
 .prof {
-  margin-bottom: 382px;
+  margin-bottom: 540px;
 }
 /* Arrays CSS */
 
@@ -223,4 +223,66 @@ ul li a:hover:after{
 font-weight:normal;
 font-style:normal;
 text-decoration: solid;
+}
+
+/* Profile Text middle = variables */
+.middle{
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* Strings */
+.middle2{
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* Arrays */
+.middle3{
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* Objects */
+.middle4{
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* Functions */
+.middle5{
+  position: absolute;
+  top: 75%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.text {
+  color: black;
+  font-size: 50px;
+  font-family: "montserrat";
+  font-weight: 900;
+  cursor: pointer;
+}
+.hidden{
+  max-width: 0;
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+.text:hover .hidden{
+  opacity: 1;
+  max-width: 1em;
 }
