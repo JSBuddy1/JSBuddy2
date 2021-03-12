@@ -8,7 +8,7 @@ function Arrays(props) {
   let [code, setCode] = useState("");
 
   const switchPage = () => {
-    setPage(Math.min(9, ++page));
+    setPage(Math.min(6, ++page));
     props.history.push(String(page));
   };
 
@@ -39,12 +39,11 @@ function Arrays(props) {
       <h3>{slides[page]?.text}</h3>
       <div dangerouslySetInnerHTML={{ __html: slides[page]?.html}}></div>
         
-      <div>{slides[page]?.image}</div>
       <br/>
       {slides[page]?.playground ? (
         <div>
-          <Playground setCode={setCode} language="javascript" id={slides[page]?.id}/>
-          <button onClick={() => doesItPass(code)}>Submit Answer</button>
+          <Playground setCode={setCode} language="javascript" />
+          {!slides[page]?.button ? null:<button onClick={() => doesItPass(code)}>Submit Answer</button>}
         </div>
       ) : null}
       <br></br> <br></br>

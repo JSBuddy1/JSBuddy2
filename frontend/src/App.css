@@ -126,12 +126,12 @@ div.CodeMirror-code {
 }
 /* Arrays CSS */
 
-.arraySlide {
+/* .arraySlide {
   background-color: #ebbfff;
   height: 800px;
-}
+} */
 /* Arrays CSS */
-#arraySlideT {
+.arraySlideT {
   background: linear-gradient(to top, #e3cff1, #d78ef8);
 }
 .arraySlideB {
@@ -141,10 +141,10 @@ div.CodeMirror-code {
 /* Objects CSS */
 
 .objectSlideT {
-  background: linear-gradient(to top, #ffffff ,#faafd6);
+  background: linear-gradient(to top, #faafd6 ,#ff7cc0);
 }
 .objectSlideB {
-  background: linear-gradient(to bottom, #ffffff ,#faafd6);
+  background: linear-gradient(to bottom, #faafd6 ,#ff7cc0);
 }
 
 

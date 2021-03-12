@@ -19,7 +19,7 @@ export const slides = [
     <p>Below is a code editor to play around with. </p>
     <p>Feel free to go wild and see what you can come up. Remember just press enter to create a new line.</p>`,
     playground: true,
-    test: false,
+    button: false
   },
   { 
     className: "fun2",
@@ -40,7 +40,8 @@ export const slides = [
   <p>JavaScript function definitions do not specify data types for parameters.</p>
   <p>JavaScript functions do not perform type checking on the passed arguments.</p>
   <p>JavaScript functions do not check the number of arguments received.</p>
-  <p>The code thing is below if you want to try stuff out.</p>`, playground: true },
+  <p>The code thing is below if you want to try stuff out.</p>`, playground: true,
+  button: true },
   {
     className: "fun1",
     text: "Ooooh Knowledge Check Fool", 
@@ -60,6 +61,7 @@ export const slides = [
     <p>All you need to do is a write a function that adds 2 parameters.</p>
     <p>You got this dude and dudettes.</p>`,
     playground: true,
+    button: true,
     test: (fn) => {
       it("adds the two given numbers", () => {
         expect(fn(2, 2)).toBe(4);
@@ -81,9 +83,9 @@ export const slides = [
     <p>Again smarty pants you will not be required at this time to invoke.</p>
     <p>We will discuss later in this section so no worries if you are like what the heck .</p>
     <p>All you need to do is a write a function that multiplies 2 parameters.</p>
-    <p>Good luck.</p>`
-    ,
+    <p>Good luck.</p>`,
     playground: true,
+    button: true,
     test: (fn) => {
       it("multiply the two given numbers", () => {
         expect(fn(2, 24)).toBe(48);
@@ -103,9 +105,9 @@ export const slides = [
   <p>Next we will leave the () empty since we will not be passing anything on those dudes</p>
   <p>Next comes the moustaches {}<p>
   <p>So inside the {} lets add some info</p>
-  <p>We have to declare a variable here which will be the sentence that will be transformed.</p>
+  <p>We have to declare a variable here which will be the string that will be transformed.</p>
   <p>let letter = 'I HEARD THAT YOURE DIGImon WEAK as FUdge';</p>
-  <p>So above we just declared our sentence but now we need to affect it.</p>
+  <p>So above we just declared our string but now we need to affect it.</p>
   <p>So in javascript there are a bunch of words that allow you to do lots of cool stuff</p>
   <p>In this case we will use .toLowerCase which will convert any letter into lowercase</p>
   <p>let newLetter = letter.toLowerCase(); } <p>
@@ -121,13 +123,16 @@ export const slides = [
   {
     className: "fun2",
     text: "Its That Time Again Knowledge Check",
-    html: `<p>We be back this time lets make a sentence into all uppercase</p>
+    html: `<p>We be back this time lets make a string into all uppercase</p>
     <p>Im no douche so no worries I will provide the word that will make it function</p>
+    <p>When you write the function make sure to include the word digimon in your string</p>
+    <p>
     <p>Our word here is .toUpperCase </p>`,
     playground: true,
+    button: true,
     test: (fn) => {
-      it("there is no I in team", () => {
-        expect(fn("hi")).toBe("HI");
+      it("where is digimon", () => {
+        expect(fn("digimon")).toContain("DIGIMON");
       });
     },
   },
