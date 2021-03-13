@@ -18,7 +18,7 @@ export const slides = [
     </p>
 
     
-        What are strings in JavaScript?
+        What are strings in JavaScript ✅?
         <br/>
 
         How to initialize Strings in JavaScript?
