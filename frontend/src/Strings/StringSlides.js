@@ -16,7 +16,7 @@ export const slides = [
     </p>
 
     
-        What are strings in JavaScript?
+        <p>What are strings in JavaScript?</p>
         <br/>
 
         How to initialize Strings in JavaScript?
@@ -184,7 +184,7 @@ export const slides = [
                      as it confuses the browser as to where the string ends</p>
 
   <code>
-      <p>let bigmouth = 'I've got no right to take my place...';</p>
+      <p>let bigMouth = 'I've got no right to take my place...';</p>
   </code>
 
   <p>This leads us very nicely into our next subject.</p>`,
