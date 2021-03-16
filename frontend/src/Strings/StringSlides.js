@@ -1,10 +1,8 @@
 import { describe, it, expect, run } from "jest-lite";
 export const slides = [
     {
-        text: "Introduction to Strings",
-        html:
-            `
-    <p>A string is a data type used in the programming languages which represents text.
+        text: <a href="https://www.javascripttutorial.net/javascript-string/">"Introduction to Strings"</a>,
+        html: `<p>A string is a data type used in the programming languages which represents text.
     <br/>
     <p>It includes a set of characters that can also contain spaces and numbers.</p>
     <br/>
@@ -18,7 +16,7 @@ export const slides = [
     </p>
 
     
-        What are strings in JavaScript?
+        <p>What are strings in JavaScript?</p>
         <br/>
 
         How to initialize Strings in JavaScript?
@@ -186,7 +184,7 @@ export const slides = [
                      as it confuses the browser as to where the string ends</p>
 
   <code>
-      <p>let bigmouth = 'I've got no right to take my place...';</p>
+      <p>let bigMouth = 'I've got no right to take my place...';</p>
   </code>
 
   <p>This leads us very nicely into our next subject.</p>`,
