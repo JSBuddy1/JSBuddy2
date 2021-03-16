@@ -14,11 +14,14 @@ export const slides = [
     covering across the following topics:
     <br/>
     </p>
-
+// used link for intro
     
         <p>What are strings in JavaScript?</p>
+        <p>What are strings in JavaScript?</p>
+        <br/><p>What are strings in JavaScript?</p>
         <br/>
-
+        <br/>
+      
         How to initialize Strings in JavaScript?
         <br/>
         What inbuilt functions are provided by Strings in JavaScript?

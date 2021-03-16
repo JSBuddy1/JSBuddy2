@@ -156,6 +156,10 @@ var two = 'two';  // variable stores string value<br/>
 <p>let $ = 1; // declared a variable with the name "$"<br/>
       <p>let _ = 2; // and now a variable with the name "_"</p>
       <br/>
+      <p>The name must contain only letters, digits, or the symbols $ and _.</p><br/>
+   <h2><p>The first character must not be a digit.</p></h2>
+    <p>let userName;</p><br/>
+    <p>let test123;</p>
 
       <p>alert($ + _); // 3</p><br/>
       <h3>Examples of incorrect variable names:</h3><br/>
