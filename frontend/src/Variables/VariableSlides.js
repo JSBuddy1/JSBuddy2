@@ -38,7 +38,7 @@ export const slides = [
 
   },
   {
-    text: 'Yaay Guess what! 🤸‍♀️ its my favy Variables 🤸‍♂️',
+    text: 'Yaay Guess what! 🤸‍♀️ its my FAVY Variables 🤸‍♂️',
     html: `<h1>JavaScript Variables : Part 1</h1>
 
         <p>JavaScript variables are containers for storing data values.</p>
@@ -161,7 +161,7 @@ var two = 'two';  // variable stores string value<br/>
     <p>let userName;</p><br/>
     <p>let test123;</p>
 
-      <p>alert($ + _); // 3</p><br/>
+      <p>Alert($ + _); // 3</p><br/>
       <h3>Examples of incorrect variable names:</h3><br/>
       <p>let 1a; // cannot start with a digit</p><br/>
       <p>let my-name; // hyphens '-' aren't allowed in the name</p><br/>
@@ -170,7 +170,7 @@ var two = 'two';  // variable stores string value<br/>
       <h4>Case matters</h4><br/>
       <p>Variables named apple and AppLE are two different variables.</p><br/>
 
-      <h4>Reserved names</h4><br/>
+      <h4>Reserved Names</h4><br/>
       <p>There is a list of reserved words, </p><br/>
       <p>which cannot be used as variable names because they are used by the language itself.</p><br/>
 
