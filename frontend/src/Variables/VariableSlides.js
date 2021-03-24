@@ -188,6 +188,40 @@ var two = 'two';  // variable stores string value<br/>
 
   },
 
+  {
+    text: 'Let',
+    html: `<p><The let statement declares a block-scoped local variable, 
+    optionally initializing it to a value./p>
+    <h2> Demo: Statement - Let</h2>
+     let x = 1;
+     
+     
+     if (x === 1) {
+       let x = 2;
+
+       console.log(x);
+       //expected output: 2
+     }
+     
+     console log(x);
+     // expected output: 1
+     
+     <h3> Description </h3>
+     "let" allows you to declare variables that are limited to the scope of a block statement, 
+     <br/> or expression on which it
+      is used, unlike the var keyword, <br/> 
+      which declares a variable globally, <br/>
+     or locally to an entire function regardless of block scope.<br/>
+      The other difference between var and let is that <br/> the latter is initialized to a value <br/>
+     only when a parser evaluates it (see below).
+
+<p>Just like const the let does not create properties <br/>
+ of the window object when declared globally (in the top-most scope).</p>`,
+
+    playground: true,
+    button: false,
+  }
+
 ]
 
 
