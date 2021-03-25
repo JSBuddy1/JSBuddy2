@@ -5,11 +5,11 @@ function Home(props) {
     <>
       <h1>JSBuddy</h1>
 
-      <h2>JavaScript Learning Tool for Kids</h2>
+      <h2>JavaScript Learning Tools for Kids</h2>
 
-      <img src={"./images/coolCats.jpeg"} style={{width:'100vh'}} alt="kids" />
+      <img src={"./images/coolCats.jpeg"} style={{ width: '100vh' }} alt="kids" />
 
-      <h3>No worries you're in good hands just click on Log In to start the fun.</h3>
+      <h3>No worries you're in good hands just click on Log In to start the fun .</h3>
     </>
   );
 }
